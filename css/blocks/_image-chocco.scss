@@ -1,0 +1,22 @@
+.image-chocco {
+  position: relative;
+  margin-top: 0;
+  margin-left: 50px;
+
+  &::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 648px;
+    background: url(./../img/4-layers.png) no-repeat;
+    top: 54%;
+    left: 22%;
+  }
+}
+
+
+.image-chocco-img {
+  padding-left: 80px;
+  min-width: 100%;
+}

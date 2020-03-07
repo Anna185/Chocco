@@ -1,0 +1,123 @@
+.third__page {
+  height: 100vh;
+  position: relative;
+  background-image: url(./../img/background-reviews.png);
+  background-repeat: no-repeat;
+  background-position-y: 500px;
+
+  &::after {
+    content:"";
+    position: absolute;
+    background: url(./../img/strawberry-reviews.png) no-repeat;
+    width: 150px;
+    height: 86px;
+    top:10% ;
+    left: 77%;
+  }
+}
+
+.reviews__background {
+  width: 940px;
+  height: 345px;
+  background-color: #f8faf9;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: ""; 
+    position: absolute;
+    width: 127px;
+    height: 167px;
+    background: url(./../img/raspberry-reviews.png) no-repeat;
+    top:0;
+    left:87% ;
+  }
+
+}
+
+.reviews__title {
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 44px;
+}
+
+ .reviews__list {
+  display: flex;
+  list-style: none;
+  width: 249px;
+  margin:0 auto ;
+  padding-left: 20px;
+  justify-content:space-between; 
+  align-items: center;
+
+}
+
+.reviews__item {
+  display: flex;
+}
+
+.reviews__left--col {
+  padding-left: 45px;
+  padding-right: 20px;
+}
+
+.reviews__description-text {
+  width: 436px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.reviews__username {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.reviews__content {
+  position: relative;
+
+  &::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      left: 46%;
+      top: -65px;
+  }
+}
+
+.reviews {
+  margin-top: 27px;
+  margin-bottom: 66px;
+}
+
+.reviews__item {
+  padding-top: 51px;
+}
+
+.user.active .user__avatar {
+  border: 6px solid #365a49;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+.user__avatar {
+    width: 68px;
+    height: 68px;
+    border-radius:50%;
+    overflow: hidden;
+  }
+
+
+  .user__avatar-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}

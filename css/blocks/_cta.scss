@@ -1,0 +1,46 @@
+.page-container {
+  display: flex;
+  padding-left: 80px;
+}
+
+.cta {
+  margin-top: 80px;
+  width: 366px;
+}
+
+.cta__title {
+  width: 330px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cta__text {
+  margin-top: 23px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px;
+  color: #365a49;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 156px;
+  min-height: 58px;
+  text-align: center;
+  padding-top: 22px;
+  margin-bottom: 62px;
+}

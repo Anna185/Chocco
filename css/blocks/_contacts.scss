@@ -1,0 +1,27 @@
+.contacts {
+  width: 162px;
+  text-align: right;
+}
+
+.contacts__phone {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.contacts__phone {
+  &::before {
+    content: "";
+    background-image: url(./../icons/phone_.png);
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    margin-top: 10px;
+  }
+}
