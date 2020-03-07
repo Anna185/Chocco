@@ -1,0 +1,523 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0;
+  height: 100%;
+
+}
+
+html {
+
+  line-height: 1, 15;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100%;
+  min-width: 1100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.img {
+  display: block;
+  min-width:100%; 
+}
+
+.first-page {
+  background-color: #86c3d7;
+  position: relative;
+  background-image: url(./../img/view.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 112px;
+    background: url(./../img/leaf-three.png) no-repeat;
+    left: 12%;
+    top: 92%;
+  }
+
+
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 80px;
+
+
+}
+
+.menu {
+  width: 634px;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts {
+  width: 162px;
+  text-align: right;
+}
+
+.contacts__phone {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.contacts__phone {
+  &::before {
+    content: "";
+    background-image: url(./../icons/phone_.png);
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    margin-top: 10px;
+  }
+}
+
+.cta {
+  margin-top: 80px;
+  width: 366px;
+
+}
+
+.cta__title {
+  width: 330px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cta__text {
+  margin-top: 23px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px;
+  color: #365a49;
+  font-family: "Alegreya Sans - Extra Bold";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  min-width: 156px;
+  min-height: 58px;
+  text-align: center;
+  padding-top: 22px;
+  margin-bottom: 62px;
+}
+
+
+.description__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.description {
+  width: 465px;
+  margin-bottom: 46px;
+}
+
+.page-container {
+  display: flex;
+  padding-left: 80px;
+}
+
+.description__points {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 46px;
+}
+
+.description__img {
+  padding-right: 10px;
+}
+
+.description__points--bonus {
+  padding-right: 0;
+
+}
+
+.description__text--bonus {
+  width: 66px;
+
+}
+
+.description__text {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.image-chocco {
+  position: relative;
+  margin-top: 0;
+  margin-left: 50px;
+
+  &::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 648px;
+    background: url(./../img/4-layers.png) no-repeat;
+    top: 54%;
+    left: 22%;
+  }
+
+
+
+}
+
+.image-chocco-img {
+  padding-left: 80px;
+  min-width: 100%;
+}
+
+
+
+.pagination {
+  position: fixed;
+  right: 5%;
+  top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pagination__link {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 15px;
+
+}
+
+.pagination__link.active {
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.advantages__container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 80px 0 0 20px;
+}
+
+.advantages__description {
+  width: 406px;
+  margin: 0 auto;
+  padding-bottom: 57px;
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__item {
+  width: 282px;
+}
+
+.advantages__item::after {
+  content:"";
+  position:absolute;
+  background:url(./../icons/circles.svg) no-repeat;
+  width: 67px;
+  height: 21px;
+  top: 60%;
+  transform: translate(300px, 10px);
+  
+}
+
+.advantages__item:last-child::after {
+  background: none;
+}
+
+
+.advantages__item-title {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 27px;
+  font-weight: 700
+}
+
+h1 {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.advantages__item-text {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.second__page {
+  height: 100vh;
+  position: relative;
+  background-image: url(./../img/background2.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 315px;
+    background: url(./../img/raspberry.png) no-repeat;
+    top: 65%;
+    left: 0;
+
+  }
+}
+
+
+  .advantages__icon-frame {
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+
+
+.advantages__item-title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.advantages__icon {
+  display: block;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  background-color: #f3f5f3;
+
+  border-radius: 50%;
+  margin-left: 80px;
+}
+
+.advantages__icon-healthy,
+.advantages__icon-tasty,
+.advantages__icon-nutrition {
+  position: absolute;
+  width: 70px;
+  height: 69px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews__item {
+
+  display: flex;
+}
+
+.reviews__list {
+  display: flex;
+  list-style: none;
+  width: 249px;
+  margin:0 auto ;
+  padding-left: 20px;
+  justify-content:space-between; 
+  align-items: center;
+
+}
+
+.third__page {
+  height: 100vh;
+  position: relative;
+  background-image: url(./../img/background-reviews.png);
+  background-repeat: no-repeat;
+  background-position-y: 500px;
+
+
+  &::after {
+    content:"";
+    position: absolute;
+    background: url(./../img/strawberry-reviews.png) no-repeat;
+    width: 150px;
+    height: 86px;
+    top:10% ;
+    left: 77%;
+  }
+}
+
+.reviews__title {
+ text-align: center;
+ padding-top: 69px;
+ padding-bottom: 44px;
+}
+
+.reviews__left--col {
+
+  padding-left: 45px;
+  padding-right: 20px;
+}
+
+
+.reviews__description-text {
+  width: 436px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.reviews__username {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.reviews__background {
+    width: 940px;
+    height: 345px;
+    background-color: #f8faf9;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: ""; 
+      position: absolute;
+      width: 127px;
+      height: 167px;
+      background: url(./../img/raspberry-reviews.png) no-repeat;
+      top:0;
+      left:87% ;
+    }
+
+}
+
+
+
+.reviews__content {
+  position: relative;
+
+  &::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      left: 46%;
+      top: -65px;
+
+
+  }
+}
+
+
+.reviews {
+  margin-top: 27px;
+  margin-bottom: 66px;
+}
+
+.reviews__item {
+  padding-top: 51px;
+}
+
+.user.active .user__avatar {
+    
+    border: 6px solid #365a49;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+
+  .user__avatar {
+    width: 68px;
+    height: 68px;
+    border-radius:50%;
+    overflow: hidden;
+  }
+
+  .user__avatar-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+  }
