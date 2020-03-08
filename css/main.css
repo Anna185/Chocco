@@ -488,6 +488,7 @@ li {
   display: flex;
   padding-left: 80px;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .cta {
