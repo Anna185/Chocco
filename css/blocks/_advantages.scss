@@ -22,11 +22,14 @@
   width: 1100px;
   margin: 0 auto;
   padding: 80px 0 0 20px;
+  display: flex;
+  flex-direction:column;
+  align-content: center; 
 } 
 
 .advantages__list {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
   list-style: none;
 }
 
@@ -87,7 +90,13 @@
 
 .advantages__icon-frame {
     text-align: center;
-    
+    display: block;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  background-color: #f3f5f3;
+  border-radius: 50%;
+  margin-left: 80px;
   }
 
 .advantages__item-title {
@@ -95,16 +104,7 @@
   text-align: center;
 }
 
-.advantages__icon {
-  display: block;
-  position: relative;
-  width: 125px;
-  height: 125px;
-  background-color: #f3f5f3;
-  border-radius: 50%;
-  margin-left: 80px;
-  
-}
+
 
 .advantages__icon-healthy,
 .advantages__icon-tasty,
