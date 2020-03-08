@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.pagination__link {
+.pagination__item {
   width: 6px;
   height: 6px;
   background-color: #ffffff;
@@ -16,7 +16,7 @@
   margin-top: 15px;
 }
 
-.pagination__link.active {
+.pagination__item__link.active {
   
   &::after {
     content: "";

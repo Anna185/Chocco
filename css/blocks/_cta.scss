@@ -4,7 +4,7 @@
 }
 
 .cta {
-  margin-top: 80px;
+  margin-top: 10px;
   width: 366px;
 }
 
@@ -25,11 +25,8 @@
   font-weight: 400;
 }
 
-.button {
-  margin-top: 32px;
-}
 
-.btn {
+.btn__cta {
   display: inline-block;
   text-decoration: none;
   background-color: #ffffff;
@@ -42,5 +39,5 @@
   min-height: 58px;
   text-align: center;
   padding-top: 22px;
-  margin-bottom: 62px;
+  margin-top: 32px;
 }

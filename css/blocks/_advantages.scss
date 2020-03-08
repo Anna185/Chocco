@@ -1,5 +1,6 @@
-.second__page {
+.section__advantages {
   height: 100vh;
+  min-height:650px; 
   position: relative;
   background-image: url(./../img/background2.png);
   background-repeat: no-repeat;
@@ -25,14 +26,15 @@
 
 .advantages__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
 .advantages__description {
-  width: 406px;
+  width: 419px;
   margin: 0 auto;
   padding-bottom: 57px;
+  text-align: center;
 }
 
 .advantages__title {
@@ -64,13 +66,7 @@
   font-weight: 700
 }
 
-h1 {
-  color: #000000;
-  font-family: "Alegreya Sans";
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
 
 .advantages__description {
   color: #666666;
@@ -89,13 +85,13 @@ h1 {
 
 
 
-  .advantages__icon-frame {
+.advantages__icon-frame {
     text-align: center;
-    padding-bottom: 35px;
+    
   }
 
 .advantages__item-title {
-  padding-bottom: 30px;
+  
   text-align: center;
 }
 
@@ -107,6 +103,7 @@ h1 {
   background-color: #f3f5f3;
   border-radius: 50%;
   margin-left: 80px;
+  
 }
 
 .advantages__icon-healthy,

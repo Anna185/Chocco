@@ -1,15 +1,16 @@
-.first-page {
+.section__hero {
   background-color: #86c3d7;
   position: relative;
   background-image: url(./../img/view.png);
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;
+  min-height:650px; 
 
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 650px;
     height: 112px;
     background: url(./../img/leaf-three.png) no-repeat;
     left: 12%;
