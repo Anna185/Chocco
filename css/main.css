@@ -387,6 +387,12 @@ html {
   height: 100vh;
   min-height: 650px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section--align--top {
+  justify-content: flex-start;
 }
 
 h2 {
@@ -487,8 +493,6 @@ li {
 .page-container {
   display: flex;
   padding-left: 80px;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .cta {
