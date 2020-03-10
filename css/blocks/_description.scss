@@ -1,38 +1,48 @@
-.description__list {
+.hero__description-list {
   list-style: none;
   display: flex;
+  justify-content:space-between;
   padding: 0;
 }
 
-.description {
-  width: 465px;
-  margin-top: 72px;
+.hero__description {
+ 
+  
 }
 
 
-.description__points {
+.hero__description-points {
   display: flex;
   justify-content: space-between;
-  padding-right: 46px;
+  width:calc(100%/3 - 29px) ;
+  margin-right:44px ;
+  margin-top: 56px;
+  
 
-  & + .description__points--bonus {
-    padding-right: 0;
+  & + .hero__description-points--bonus {
+    margin-right: 0;
   }  
 }
 
 
-.description__img {
-  padding-right: 10px;
+.hero__description-img {
+  margin-right: 10px;
 }
 
 
-.description__text {
+.hero__description-text {
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
 }
 
-.description__text--bonus {
-    width: 66px;
+
+
+.hero__title {
+  margin-top:12px; 
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

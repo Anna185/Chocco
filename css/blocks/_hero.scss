@@ -1,11 +1,18 @@
+.container--hero {
+  height: 100%;
+}
+
+
+
 .section__hero {
   background-color: #86c3d7;
   position: relative;
   background-image: url(./../img/view.png);
   background-repeat: no-repeat;
   background-position: right;
+  width: 100%;
   height: 100vh;
-  min-height:650px; 
+
 
   &::before {
     content: "";
@@ -21,11 +28,15 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 648px;
+  height: 341px;
   background: url(./../img/4-layers.png) no-repeat;
-  top: 55%;
-  left: 58%;
-  background-position-y:top;
-  
+  left: 56%;
+  bottom:-45px ;
+
   }
+}
+
+.hero__content {
+  display: flex;
+  height: 100%;
 }
