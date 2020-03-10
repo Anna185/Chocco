@@ -1,6 +1,4 @@
-.section__advantages {
-  height: 100vh;
-  min-height:650px; 
+.advantages { 
   position: relative;
   background-image: url(./../img/background2.png);
   background-repeat: no-repeat;
@@ -19,9 +17,7 @@
 }
 
 .advantages__container {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 80px 0 0 20px;
+  padding-top: 80px;
   display: flex;
   flex-direction:column;
   align-content: center; 
@@ -40,9 +36,7 @@
   text-align: center;
 }
 
-.advantages__title {
-  text-align: center;
-}
+
 
 .advantages__item {
   width: 282px;
@@ -54,7 +48,7 @@
   width: 67px;
   height: 21px;
   top: 57%;
-  transform: translate(300px, 10px);
+  transform: translate(269px, 10px);
   }
 
   &:last-child::after {
@@ -63,11 +57,11 @@
 }
 
 .advantages__item-title {
-  color: #000000;
-  font-family: "Alegreya Sans";
+  margin-top: 35px;
   font-size: 27px;
   font-weight: 700;
-  margin-top: 35px;
+  text-align: center;
+
 }
 
 
@@ -100,12 +94,6 @@
   border-radius: 50%;
   margin-left: 80px;
   }
-
-.advantages__item-title {
-  
-  text-align: center;
-}
-
 
 
 .advantages__icon-healthy,

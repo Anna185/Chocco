@@ -1,5 +1,4 @@
-.section__reviews {
-  height: 100vh;
+.reviews {
   position: relative;
   background-image: url(./../img/background-reviews.png);
   background-repeat: no-repeat;
@@ -48,7 +47,6 @@
 }
 
 .reviews__title {
-  text-align: center;
   padding-top: 69px;
   padding-bottom: 47px;
 }
@@ -68,7 +66,7 @@
   align-items: center;
 }
 
-.reviews__left--col {
+.reviews__left-col {
   padding-left: 45px;
   padding-right: 20px;
 }
@@ -89,10 +87,7 @@
   font-weight: 500;
 }
 
-.reviews {
-  margin-top: 27px;
-  margin-bottom: 66px;
-}
+
 
 .reviews__item.active {
   border: 6px solid #365a49;

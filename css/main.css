@@ -395,15 +395,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h2 {
-  color: #000000;
-  font-family: "Alegreya Sans";
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 li {
   list-style: none;
   padding: 0;
@@ -415,7 +406,7 @@ button {
 }
 
 .title {
-  width: 330px;
+  text-align: center;
   color: #000000;
   font-family: "Alegreya Sans";
   font-size: 48px;
@@ -427,16 +418,14 @@ button {
   height: 100%;
 }
 
-.section__hero {
+.hero {
   background-color: #86c3d7;
   position: relative;
   background-image: url(./../img/view.png);
   background-repeat: no-repeat;
   background-position: right;
-  width: 100%;
-  height: 100vh;
 }
-.section__hero::before {
+.hero::before {
   content: "";
   position: absolute;
   width: 650px;
@@ -445,7 +434,7 @@ button {
   left: 3%;
   top: 92%;
 }
-.section__hero::after {
+.hero::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -528,6 +517,7 @@ button {
 
 .hero__title {
   margin-top: -16px;
+  text-align: left;
 }
 
 .hero__text {
@@ -634,15 +624,13 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.section__advantages {
-  height: 100vh;
-  min-height: 650px;
+.advantages {
   position: relative;
   background-image: url(./../img/background2.png);
   background-repeat: no-repeat;
   background-position-y: center;
 }
-.section__advantages::after {
+.advantages::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -653,9 +641,7 @@ button {
 }
 
 .advantages__container {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 80px 0 0 20px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -674,10 +660,6 @@ button {
   text-align: center;
 }
 
-.advantages__title {
-  text-align: center;
-}
-
 .advantages__item {
   width: 282px;
 }
@@ -688,18 +670,17 @@ button {
   width: 67px;
   height: 21px;
   top: 57%;
-  transform: translate(300px, 10px);
+  transform: translate(269px, 10px);
 }
 .advantages__item:last-child::after {
   background: none;
 }
 
 .advantages__item-title {
-  color: #000000;
-  font-family: "Alegreya Sans";
+  margin-top: 35px;
   font-size: 27px;
   font-weight: 700;
-  margin-top: 35px;
+  text-align: center;
 }
 
 .advantages__description {
@@ -729,10 +710,6 @@ button {
   margin-left: 80px;
 }
 
-.advantages__item-title {
-  text-align: center;
-}
-
 .advantages__icon-healthy,
 .advantages__icon-tasty,
 .advantages__icon-nutrition {
@@ -744,14 +721,13 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.section__reviews {
-  height: 100vh;
+.reviews {
   position: relative;
   background-image: url(./../img/background-reviews.png);
   background-repeat: no-repeat;
   background-position-y: 500px;
 }
-.section__reviews::after {
+.reviews::after {
   content: "";
   position: absolute;
   background: url(./../img/strawberry-reviews.png) no-repeat;
@@ -791,7 +767,6 @@ button {
 }
 
 .reviews__title {
-  text-align: center;
   padding-top: 69px;
   padding-bottom: 47px;
 }
@@ -811,7 +786,7 @@ button {
   align-items: center;
 }
 
-.reviews__left--col {
+.reviews__left-col {
   padding-left: 45px;
   padding-right: 20px;
 }
@@ -832,11 +807,6 @@ button {
   font-weight: 500;
 }
 
-.reviews {
-  margin-top: 27px;
-  margin-bottom: 66px;
-}
-
 .reviews__item.active {
   border: 6px solid #365a49;
   border-radius: 50%;
@@ -855,4 +825,21 @@ button {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item-user {
+  position: relative;
+  display: flex;
+}
+.team__item-user::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 7px;
+  background-color: #365a49;
 }
