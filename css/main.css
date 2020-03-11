@@ -907,15 +907,100 @@ button {
   display: flex;
 }
 
-.chocco__accordeon {
+.chocco__left-col {
+  position: relative;
+  width: 33%;
+  background: url(./../../img/chocco-background-one.png) no-repeat;
+}
+.chocco__left-col::after {
   position: absolute;
-  left: 60%;
+  content: "";
+  background-color: #333537;
+  min-width: 268px;
+  min-height: 650px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+.chocco__left-col__title {
+  position: absolute;
+  z-index: 1;
+  padding-left: 40px;
+  padding-top: 99px;
 }
 
 .chocco__accordeon-list {
   display: flex;
+  padding: 0;
+  margin-top: 0;
 }
 
-.chocco__accordeon-item {
-  width: 100px;
+.chocco__accordeon-item-title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.chocco__accordeon-item-btn {
+  position: relative;
+  border: none;
+  min-width: 100px;
+  min-height: 650px;
+}
+
+.chocco__accordeon-item-btn--milk {
+  background: url(./../../item/milk.png) no-repeat;
+}
+.chocco__accordeon-item-btn--milk::after {
+  position: absolute;
+  content: "";
+  background-color: #333537;
+  min-width: 100px;
+  min-height: 650px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+.chocco__accordeon-item-btn--honey {
+  background: url(./../../item/honey.png) no-repeat;
+}
+.chocco__accordeon-item-btn--honey::after {
+  position: absolute;
+  content: "";
+  background-color: #333537;
+  min-width: 100px;
+  min-height: 650px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+.chocco__accordeon-item-btn--berries {
+  background: url(./../../item/berries.png) no-repeat;
+}
+.chocco__accordeon-item-btn--berries::after {
+  position: absolute;
+  content: "";
+  background-color: #333537;
+  min-width: 100px;
+  min-height: 650px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+.chocco__accordeon-item-title {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.chocco__accordeon-item-text {
+  width: 0;
+  overflow: hidden;
+}
+.chocco__accordeon-item-text:active {
+  width: 530px;
 }
