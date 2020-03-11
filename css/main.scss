@@ -13,42 +13,7 @@
 @import '../css/blocks/_pagination';
 @import '../css/blocks/advantages';
 @import '../css/blocks/reviews';
-
-
-
-
-
-.team__list {
-  display: flex;
-  justify-content:space-between;
-}
-
-.team__item-user {
-position: relative;
-display: flex;
- 
-
-
-&::after {
-  content:"";
-  position: absolute;
-  width: 9px;
-  height: 7px;
-  background-color: #365a49;
-
-}
-}
-
-
-
-
-
-
-
-
-
-
-
+@import '../css/blocks/team';
 
 
 

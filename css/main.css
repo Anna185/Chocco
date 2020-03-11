@@ -827,19 +827,77 @@ button {
   object-fit: cover;
 }
 
+.team {
+  position: relative;
+}
+.team::after {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 114px;
+  background-image: url(./../img/raspberry-team.png);
+  bottom: -42px;
+  left: 0;
+}
+
+.team__title {
+  padding-top: 73px;
+}
+
 .team__list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  margin-top: 58px;
 }
 
-.team__item-user {
+.team__item-accordeon {
   position: relative;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 12px;
 }
-.team__item-user::after {
+.team__item-accordeon::after {
   content: "";
   position: absolute;
-  width: 9px;
-  height: 7px;
-  background-color: #365a49;
+  left: 76%;
+  top: 5px;
+  border: 7px solid transparent;
+  border-top-color: #365a49;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.team__item-list {
+  padding: 0;
+  margin-top: 13px;
+  height: 0;
+  overflow: hidden;
+}
+.team__item-list + .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.team__item-accordeon-title {
+  font-weight: 700;
+}
+
+.team__item-accordeon--active .team__item-list {
+  height: auto;
+}
+
+.team__item-accordeon--active::after {
+  border-bottom-color: #365a49;
+  border-top-color: #ffffff;
+  left: 77%;
+  top: -2px;
+}
+
+.team__item-list-text {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: -14px;
 }
