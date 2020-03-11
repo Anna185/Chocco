@@ -522,10 +522,9 @@ button {
 
 .hero__text {
   color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 21px;
-  font-weight: 400;
   margin-top: 27px;
+  font-weight: 400;
+  font-size: 21px;
 }
 
 .btn {
@@ -658,6 +657,9 @@ button {
   margin: 0 auto;
   padding-bottom: 57px;
   text-align: center;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .advantages__item {
@@ -681,13 +683,6 @@ button {
   font-size: 27px;
   font-weight: 700;
   text-align: center;
-}
-
-.advantages__description {
-  color: #666666;
-  font-family: "Alegreya Sans";
-  font-size: 18px;
-  font-weight: 400;
 }
 
 .advantages__item-text {
@@ -900,4 +895,27 @@ button {
   font-size: 18px;
   font-weight: 300;
   margin-top: -14px;
+}
+
+.chocco {
+  width: 100vw;
+}
+
+.chocco__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.chocco__accordeon {
+  position: absolute;
+  left: 60%;
+}
+
+.chocco__accordeon-list {
+  display: flex;
+}
+
+.chocco__accordeon-item {
+  width: 100px;
 }

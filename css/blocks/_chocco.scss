@@ -1,0 +1,25 @@
+.chocco {
+  width: 100vw;
+}
+
+.chocco__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+.chocco__accordeon {
+  position: absolute;
+  left:60%;
+}
+
+
+.chocco__accordeon-list {
+  display: flex;
+ 
+}
+
+.chocco__accordeon-item {
+  width: 100px;
+}
