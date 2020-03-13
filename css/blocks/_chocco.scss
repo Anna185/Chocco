@@ -1,33 +1,40 @@
 .chocco {
-  width: 100vw;
+  width: 100%;
+  background: url(../img/chocco-menu.png) no-repeat;
+  background-size:cover; 
+  position: relative;
+
+  &::after {
+    content:"";
+    position: absolute;
+    width: 104px;
+    height: 114px;
+    background-image:url(./../img/raspberry-team.png);
+    left: 40px;
+    top: -60px; 
+  }
+
 }
 
 .chocco__container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+
+.chocco__accordeon {
+  margin-left:auto ;
+}
+
+
+.chocco__accordeon-item {
   display: flex;
 }
 
-.chocco__left-col {
-  position: relative;
-  width: 33%;
-  background: url(./../../img/chocco-background-one.png) no-repeat;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-color: #333537;
-    min-width: 268px;
-    min-height: 650px;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-  }
-}
-
-.chocco__left-col__title {
+.chocco__title {
   position: absolute; 
-  z-index:1 ;
   padding-left: 40px;
   padding-top: 99px;
 }
@@ -38,12 +45,17 @@
   display: flex;
   padding: 0;
   margin-top: 0;
+  min-height: 650px;
+  height: 100vh;
+   
 
 }
 
 .chocco__accordeon-item-title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  display: inline-block;
+  
 
 }
 
@@ -52,27 +64,18 @@
   border: none;
   min-width: 100px;
   min-height: 650px;
-
+  height: 100vh;
 }
 
 .chocco__accordeon-item-btn--milk {
-  background: url(./../../item/milk.png)no-repeat;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-color: #333537;
-    min-width: 100px;
-    min-height: 650px;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-  }
+  background: url(../item/milk.png)no-repeat;
+  background-size:cover;
 }
 
 
 .chocco__accordeon-item-btn--honey {
-  background: url(./../../item/honey.png) no-repeat;
+  background: url(../item/honey.png) no-repeat;
+  background-size:cover;
 
   &::after {
     position: absolute;
@@ -80,6 +83,7 @@
     background-color: #333537;
     min-width: 100px;
     min-height: 650px;
+    height: 100%;
     opacity: 0.4;
     top: 0;
     left: 0;
@@ -87,7 +91,8 @@
 }
 
 .chocco__accordeon-item-btn--berries {
-  background: url(./../../item/berries.png) no-repeat;
+  background: url(../item/berries.png) no-repeat;
+  background-size:cover;
 
   &::after {
     position: absolute;
@@ -95,12 +100,14 @@
     background-color: #333537;
     min-width: 100px;
     min-height: 650px;
+    height: 100%;
     opacity: 0.4;
     top: 0;
     left: 0;
   }
 
 }
+
 
 
 
@@ -112,11 +119,57 @@
   font-weight: 700;
 }
 
-.chocco__accordeon-item-text {
-  width: 0;
-  overflow: hidden;
 
-  &:active {
+.chocco__accordeon-item.active {
+  .chocco__accordeon-item-content {
     width: 530px;
+    height: 100%;
+
+  }
+
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 1%;
+  right: 3%;
+
+  &:hover {
+    .close-btn__icon {
+      fill: white;
+    }
   }
 }
+
+.close-btn__icon {
+  width: 20px;
+  height: 20px;
+  fill: #c2c3c4;
+  transition: fill .2s;
+}
+
+.chocco__accordeon-item-content {
+  max-width: 530px;
+  font-size: 16px;
+  position: relative;
+
+  width: 0;
+  overflow: hidden;
+  background-color: rgb(51, 53, 55, .9);
+}
+
+ .chocco__accordeon-item-text {
+  height: 100%;
+  max-width: 77%;
+  padding-top: 50px;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.97px;
+  color: #ffffff;
+  }

@@ -1,15 +1,5 @@
 .team {
   position: relative;
-
-  &::after {
-    content:"";
-    position: absolute;
-    width: 104px;
-    height: 114px;
-    background-image:url(./../img/raspberry-team.png);
-    bottom:-42px ;
-    left:0; 
-  }
 }
 
 .team__title {
