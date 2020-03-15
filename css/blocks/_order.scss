@@ -1,0 +1,258 @@
+.order {
+  background: url(./../img/order-background.png) center center / cover no-repeat;
+  position: relative;
+
+  &::before {
+    content:"";
+    position: absolute;
+    background-image:url(./../img/berry-work.png);
+    width: 242px;
+    height: 264px;
+    top: -158px;
+    right: 0;
+
+  }
+
+}
+
+.container__order {
+width: 100%;
+margin: 0 auto;
+height: 100%;
+}
+
+.order__form-wrap {
+  display: flex;
+  color: #365a49;
+  flex-direction: column;
+}
+
+.title--order {
+  padding-top: 80px;
+  color: #365a49;
+
+}
+
+.order__form {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url(./../img/blueberry-order.png) no-repeat;
+    height: 48px;
+    width: 47px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 188px;
+    background: url(./../img/leaf-order.png)no-repeat;
+    bottom: 0;
+    right: 3px;
+  }
+}
+
+.order__form-row {
+  display: flex;
+
+  &--content {
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.order__block-title {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-family: "open_sans", "Arial", sans-serif;
+}
+
+
+.order__form-block {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 16px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.order__form-column {
+  margin-right: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.order__form-input {
+  border: 3px solid transparent;
+  width: 100%;
+  padding: 20px 11px;
+  font-size: 18px;
+  font-family: "open_sans", "Arial", sans-serif;
+
+  &:focus {
+    outline: none;
+    border-color: #dee2bd;
+  }
+
+}
+
+.order__form-input--textarea {
+  resize: vertical;
+  min-width: 460px;
+  min-height: 180px;
+}
+
+
+.switch-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.switch-controls__row {
+  display: flex;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.switch-controls__elem {
+  display: none;
+}
+
+.switch-controls__block-title {
+  font-size: 18px;
+  color: #365a49;
+  margin-left: 5px;
+}
+
+.switch-controls__block {
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+  position: relative;
+
+}
+
+.switch-controls__block:last-child {
+  margin-right: 0;
+}
+
+.order__form-buttons {
+  margin-top: 30px;
+}
+
+.btn__order {
+  text-decoration: none;
+  background-color: #365a49;
+  color: #ffffff;
+
+
+  &:hover {
+    color: #365a49;
+    background-color: #ffffff;
+
+  }
+}
+
+.btn__order--reset {
+  pointer-events: none;
+  background: transparent;
+  font-weight: 400;
+  line-height: 30.05px;
+  color: #000000;
+  text-transform: none;
+}
+
+.switch-controls__appearance {
+  position: relative;
+  width: 25px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+}
+
+.switch-controls__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.switch-controls__appearance::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  background-color: #365a49;
+  border-radius: 50%;
+  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.switch-controls__appearance:hover,
+.switch-controls__appearance:focus {
+  cursor: pointer;
+}
+
+.switch-controls__elem:checked~.switch-controls__text .switch-controls__appearance::before {
+  display: block;
+  width: 13px;
+  height: 14px;
+}
+
+.switch-controls__block--checkbox {
+  .switch-controls__appearance {
+    width: 25px;
+    height: 26px;
+    border-radius: 0;
+  }
+}
+
+
+.switch-controls__block--checkbox {
+  .switch-controls__appearance::before {
+    left: 7px;
+    top: 3px;
+    width: 9px;
+    height: 6px;
+    border-radius:0;
+    background-color:transparent;
+    border: solid  #365a49;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);  
+  }
+}
+
+
+.order__form-buttons {
+  margin-top: 30px;
+}
+
+

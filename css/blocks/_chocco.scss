@@ -70,12 +70,26 @@
 .chocco__accordeon-item-btn--milk {
   background: url(../item/milk.png)no-repeat;
   background-size:cover;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #333537;
+    min-width: 100px;
+    min-height: 650px;
+    height: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    
+  }
 }
 
 
 .chocco__accordeon-item-btn--honey {
   background: url(../item/honey.png) no-repeat;
   background-size:cover;
+ 
 
   &::after {
     position: absolute;
@@ -93,6 +107,7 @@
 .chocco__accordeon-item-btn--berries {
   background: url(../item/berries.png) no-repeat;
   background-size:cover;
+  
 
   &::after {
     position: absolute;
@@ -104,6 +119,7 @@
     opacity: 0.4;
     top: 0;
     left: 0;
+    
   }
 
 }
@@ -133,7 +149,6 @@
   border: none;
   background: none;
   cursor: pointer;
-
   position: absolute;
   top: 1%;
   right: 3%;

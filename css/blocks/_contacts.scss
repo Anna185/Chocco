@@ -15,14 +15,6 @@
 
 }
 
-.contacts__phone {
-  &::before {
-    content: "";
-    background-image: url(./../icons/phone_.png);
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 11px;
-    margin-top: 10px;
-  }
+.phone-number__icon--header {
+  fill: #ffffff;
 }

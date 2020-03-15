@@ -494,14 +494,8 @@ button {
   padding-right: 20px;
 }
 
-.contacts__phone::before {
-  content: "";
-  background-image: url(./../icons/phone_.png);
-  display: block;
-  position: absolute;
-  width: 12px;
-  height: 11px;
-  margin-top: 10px;
+.phone-number__icon--header {
+  fill: #ffffff;
 }
 
 .hero__cta {
@@ -555,9 +549,6 @@ button {
 
 .hero__description-points {
   display: flex;
-  justify-content: space-between;
-  width: calc(100%/3 - 29px);
-  margin-right: 44px;
   margin-top: 56px;
 }
 .hero__description-points + .hero__description-points--bonus {
@@ -565,7 +556,9 @@ button {
 }
 
 .hero__description-img {
-  margin-right: 10px;
+  align-items: center;
+  display: flex;
+  margin-right: 3.5%;
 }
 
 .hero__description-text {
@@ -573,6 +566,9 @@ button {
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
+  max-width: 6.25 rem;
+  z-index: 2;
 }
 
 .hero__title {
@@ -581,6 +577,14 @@ button {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.hero__description-img-icon {
+  width: 3.125rem;
+  height: 2.625rem;
+  fill: #c6f7ff;
+  margin-right: 6%;
+  z-index: 2;
 }
 
 .hero__image-chocco {
@@ -706,12 +710,11 @@ button {
   margin-left: 80px;
 }
 
-.advantages__icon-healthy,
-.advantages__icon-tasty,
-.advantages__icon-nutrition {
+.advantages__icon-img {
   position: absolute;
-  width: 70px;
+  width: 66px;
   height: 69px;
+  fill: #2e2e2d;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -821,6 +824,17 @@ button {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.section__how-we-work {
+  background-color: #f8faf9;
+  position: relative;
+}
+
+.container__how-we-work {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .team {
@@ -951,6 +965,17 @@ button {
   background: url(../item/milk.png) no-repeat;
   background-size: cover;
 }
+.chocco__accordeon-item-btn--milk::after {
+  position: absolute;
+  content: "";
+  background-color: #333537;
+  min-width: 100px;
+  min-height: 650px;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
 
 .chocco__accordeon-item-btn--honey {
   background: url(../item/honey.png) no-repeat;
@@ -1040,11 +1065,20 @@ button {
   background: url(./../img/order-background.png) center center/cover no-repeat;
   position: relative;
 }
+.order::before {
+  content: "";
+  position: absolute;
+  background-image: url(./../img/berry-work.png);
+  width: 242px;
+  height: 264px;
+  top: -158px;
+  right: 0;
+}
 
 .container__order {
-  width: 100vw;
-  min-height: 650px;
   width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .order__form-wrap {
@@ -1067,7 +1101,7 @@ button {
   height: 48px;
   width: 47px;
   position: absolute;
-  bottom: 83px;
+  bottom: 0;
   left: 20px;
 }
 .order__form::after {
@@ -1076,7 +1110,7 @@ button {
   width: 135px;
   height: 188px;
   background: url(./../img/leaf-order.png) no-repeat;
-  bottom: 81px;
+  bottom: 0;
   right: 3px;
 }
 
@@ -1255,20 +1289,32 @@ button {
   margin-top: 30px;
 }
 
-.map__img {
-  width: 100vw;
-  position: relative;
+.our-contacts__map {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-contacts__map-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .footer {
   position: absolute;
-  content: "";
   bottom: 0;
-  background: #ffff;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
 
 .footer__container {
-  width: 100vw;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0 23px 0;
 }
 
 .contacts--footer .contacts__phone {
@@ -1276,4 +1322,40 @@ button {
   font-weight: 400;
   line-height: 30px;
   color: #365a49;
+}
+
+.our-contacts__address {
+  padding-bottom: 4px;
+}
+
+.footer__col-right {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin-left: 1.25rem;
+}
+.socials__item:first-child {
+  margin-left: 0;
+}
+
+.phone-number__icon {
+  width: 12px;
+  height: 11px;
+  fill: #365a49;
+}
+
+.socials__item-icon {
+  width: 20px;
+  height: 20px;
+  fill: #b2b2b2;
+}
+.socials__item-icon:hover {
+  fill: #000000;
 }
