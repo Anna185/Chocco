@@ -2,88 +2,122 @@
   position: relative;
   background-image: url(./../img/background-reviews.png);
   background-repeat: no-repeat;
-  background-position-y: 500px;
+  background-position-y: 31.25rem;
 
   &::after {
     content:"";
     position: absolute;
     background: url(./../img/strawberry-reviews.png) no-repeat;
-    width: 150px;
-    height: 86px;
+    width: 9.375rem;
+    height: 5.375rem;
     top:10% ;
     left: 77%;
+
+    @include tablets {
+    top: 2%;
+    left: 84%;
+    }
   }
+
 }
 
 .reviews__background {
-  width: 940px;
-  height: 345px;
+  width: 58.75rem;
+  height: 21.5625rem;
   background-color: #f8faf9;
   margin: 0 auto;
   position: relative;
-  padding-top: 51px;
+  padding-top:3.1875rem;
   display: flex;
 
   &::after {
     content: ""; 
     position: absolute;
-    width: 127px;
-    height: 167px;
+    width: 7.9375rem;
+    height: 10.4375rem;
     background: url(./../img/raspberry-reviews.png) no-repeat;
-    top:0;
+    top:0rem;
     left:87% ;
+
+    @include tablets {
+      left: 82%;
+    }
   }
   &::before {
     content: "";
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
     background-color: #ffffff;;
     border-radius: 50%;
     left: 46%;
-    top: -60px;
-}
+    top: -3.75rem;
+  }
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+  }
 
 }
+
+.reviews__description {
+  @include tablets {
+    text-align: center;
+  
+
+  }
+}
+
 
 .reviews__title {
-  padding-top: 69px;
-  padding-bottom: 47px;
+  padding-top: 4.3125rem;
+  padding-bottom: 2.9375rem;
 }
 
 .reviews__description-title {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .reviews__list {
   display: flex;
   list-style: none;
-  width: 249px;
+  width: 15.5625rem;
   margin:0 auto ;
-  padding-left: 20px;
-  padding-top: 27px;
+  padding-left: 1.25rem;
+  padding-top: 1.6875rem;
   justify-content:space-between; 
   align-items: center;
+
+  @include tablets {
+  padding-top: 3.6875rem;
+  }
 }
 
 .reviews__left-col {
-  padding-left: 45px;
-  padding-right: 20px;
+  padding-left: 2.8125rem;
+  padding-right: 1.25rem;
 }
 
 .reviews__description-text {
-  width: 436px;
+  width:27.25rem;
   color: #666666;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  margin-left: 0;
+  margin-left: 0rem;
+
+  @include tablets {
+    width:auto ;
+    margin:1.125rem 2.5rem 1.125rem 2.5rem; 
+  }
 }
 
 .reviews__username {
   color: #000000;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -96,8 +130,8 @@
 }
 
  .reviews__item { 
-    width: 68px;
-    height: 68px;
+    width: 4.25rem;
+    height: 4.25rem;
     border-radius:50%;
     overflow: hidden;
   }
@@ -108,4 +142,12 @@
     display: block;
     object-fit: cover;
 
+}
+
+.avatar-img {
+ 
+  @include tablets {
+    width: 8.1875rem;
+    height: 8.3125rem;
+  }
 }

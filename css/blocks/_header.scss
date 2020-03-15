@@ -2,5 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
+  padding-top:0.9375rem;  
+
+
+  @media (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
 }
+}   

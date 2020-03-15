@@ -1,12 +1,19 @@
 .menu {
-  width: 637px;
+  width: 39.8125rem;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 
 .menu__list {
   display: flex;
   list-style: none;
   text-decoration: none;
-  padding: 0;
+  padding: 0rem;
   justify-content: space-between;
 }
 
@@ -14,7 +21,7 @@
   text-decoration: none;
   color: #ffffff;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.875rem;
 }

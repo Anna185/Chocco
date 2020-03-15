@@ -2,20 +2,24 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 0rem;
 }
 
-.hero__description {}
+@media (max-width: 768px) {
+  .hero__description {
+    display: none;
+  }
+}
 
 
 .hero__description-points {
   display: flex;
-
-  margin-top: 56px;
+  margin-right: 1.5rem;
+  margin-top: 3.5rem;
 
 
   &+.hero__description-points--bonus {
-    margin-right: 0;
+    margin-right: 0rem;
   }
 }
 
@@ -30,19 +34,19 @@
 .hero__description-text {
   color: #ffffff;
   font-family: "Alegreya Sans";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.3;
-  max-width: 6.25 rem;
+  max-width: 6.25rem;
   z-index: 2;
 }
 
 
 
 .hero__title {
-  margin-top: 12px;
+  margin-top: 0.75rem;
   font-family: "Alegreya Sans";
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }

@@ -5,7 +5,12 @@
   display: flex;
   flex-direction:column;
   justify-content:center;
-  align-items: flex-start;  
+  align-items: flex-start; 
+  
+  @include tablets {
+    width:auto ;
+    margin-bottom: 2%;
+  }
 }
 
 .title--white {
@@ -14,31 +19,47 @@
 }
 
 .hero__title {
-  margin-top:-16px;
+  margin-top:-1rem;
   text-align: left;
+
+  @include tablets {
+    text-align: center;
+    padding-bottom: 2%; 
+  }
 }
 
 .hero__text {
   color: #ffffff;
-  margin-top: 27px;
+  margin-top:1.6875rem;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 1.3125rem;
+
+  @include tablets {
+    text-align: center;
+    margin:0 auto ; 
+    padding-bottom: 2%;
+  }
+
 }
 
 .btn {
   display: inline-block;
   text-decoration: none;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: #365a49;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding:20px 33px ;  
+  padding:1.25rem 2.0625rem ;  
 }
 
 .btn__cta {
-  margin-top: 32px;
-  margin-left: 12px;
+  margin-top: 2rem;
+  margin-left: 0.75rem;
+
+  @include tablets {
+    margin:0 auto ;
+}
 }

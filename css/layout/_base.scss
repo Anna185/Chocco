@@ -2,11 +2,12 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
   margin: 0;
   height: 100%;
+  font-size:16px;
 
 }
 
 html {
-  line-height: 1, 15;
+  line-height: 1,15;
 }
 
 *, *::after, *::before {
@@ -21,18 +22,15 @@ html {
 }
 
 .container {
-  width: 960px;
+  max-width:60rem;
   margin: 0 auto;
   position: relative;
-  
-  
- 
- 
+  width: 95%; 
 }
 
 .section {
   height: 100vh;
-  min-height:650px;
+  min-height:40.625rem;
   width: 100%;
   
 }
@@ -67,9 +65,31 @@ button {
   text-align: center;
   color: #000000;
   font-family: "Alegreya Sans";
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 367px) {
+  html {
+    font-size: 12px;
+  }
+}
