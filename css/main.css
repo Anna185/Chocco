@@ -845,7 +845,7 @@ button {
   padding-top: 73px;
 }
 
-.team__list {
+.team__list-accordeon {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -853,16 +853,23 @@ button {
 }
 
 .team__item-accordeon {
+  margin-right: 20px;
+  text-align: center;
+}
+.team__item-accordeon:last-child {
+  margin-right: 0;
+}
+
+.team__item-accordeon-title {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  font-weight: 700;
   text-align: center;
   margin-top: 12px;
 }
-.team__item-accordeon::after {
+.team__item-accordeon-title::after {
   content: "";
   position: absolute;
-  left: 76%;
+  left: 97%;
   top: 5px;
   border: 7px solid transparent;
   border-top-color: #365a49;
@@ -870,37 +877,33 @@ button {
   border-right: 5px solid transparent;
 }
 
-.team__item-list {
+.team__item-accordeon-info {
   padding: 0;
   margin-top: 13px;
   height: 0;
   overflow: hidden;
 }
-.team__item-list + .title {
+.team__item-accordeon-info + .title {
   font-size: 18px;
   font-weight: 400;
 }
 
-.team__item-accordeon-title {
-  font-weight: 700;
-}
-
-.team__item-accordeon--active .team__item-list {
+.team__item-accordeon--active .team__item-accordeon-info {
   height: auto;
 }
 
-.team__item-accordeon--active::after {
+.team__item-accordeon--active .team__item-accordeon-title::after {
   border-bottom-color: #365a49;
   border-top-color: #ffffff;
-  left: 77%;
+  left: 97%;
   top: -2px;
 }
 
-.team__item-list-text {
+.team__item-accordeon-info-text {
   color: #666666;
   font-size: 18px;
   font-weight: 300;
-  margin-top: -14px;
+  margin-top: 6px;
 }
 
 .chocco {
