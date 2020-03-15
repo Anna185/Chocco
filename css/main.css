@@ -366,8 +366,8 @@ html {
 }
 
 .wrapper {
-  height: 100%;
-  min-width: 1100px;
+  min-height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -904,6 +904,12 @@ button {
   font-size: 18px;
   font-weight: 300;
   margin-top: 6px;
+}
+
+.team__item-accordeon-title {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffffff;
 }
 
 .chocco {
