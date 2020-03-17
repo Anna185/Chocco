@@ -11,3 +11,30 @@
   }
 }
 }   
+
+.hamburger {
+  display: none;
+  background-color: #86c3d7;
+}
+
+.hamburger__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .phone-number {
+    display: none;
+  }
+
+  .hamburger {
+    display: initial;
+
+    @include phones {
+      display: initial;
+
+    }
+  }
+}
+

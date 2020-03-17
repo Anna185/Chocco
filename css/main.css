@@ -384,6 +384,7 @@ html {
   height: 100vh;
   min-height: 40.625rem;
   width: 100%;
+  position: relative;
 }
 
 .img {
@@ -497,6 +498,31 @@ button {
   }
 }
 
+.hamburger {
+  display: none;
+  background-color: #86c3d7;
+}
+
+.hamburger__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .phone-number {
+    display: none;
+  }
+
+  .hamburger {
+    display: initial;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .hamburger {
+    display: initial;
+  }
+}
 .menu {
   width: 39.8125rem;
 }
@@ -553,7 +579,7 @@ button {
 @media screen and (max-width: 768px) {
   .hero__cta {
     width: auto;
-    margin-bottom: 2%;
+    margin-bottom: 27%;
   }
 }
 
@@ -674,9 +700,12 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .hero__img {
-    background: url(./../img/bar-tablets.png) no-repeat;
-    background-size: 50%, 65%;
+  .hero__image-chocco {
+    background: url(./../../img/bar-tablets.png) no-repeat;
+    background-size: 68%, 65%;
+    width: 100%;
+    height: 59%;
+    margin-left: 15%;
   }
 }
 
@@ -687,6 +716,11 @@ button {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .pagination {
+    display: none;
+  }
 }
 
 .pagination__item {
@@ -760,6 +794,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .advantages__list {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -773,9 +808,22 @@ button {
   font-size: 1.125rem;
   font-weight: 400;
 }
+@media screen and (max-width: 480px) {
+  .advantages__description {
+    width: auto;
+    padding-bottom: 0;
+  }
+}
 
 .advantages__item {
   width: 17.625rem;
+}
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    width: auto;
+    display: flex;
+    padding-bottom: 10%;
+  }
 }
 .advantages__item::after {
   content: "";
@@ -791,12 +839,6 @@ button {
     content: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .advantages__item::after {
-    max-width: initial;
-    text-align: left;
-  }
-}
 .advantages__item:last-child::after {
   background: none;
 }
@@ -807,6 +849,12 @@ button {
   font-weight: 700;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .advantages__item-title {
+    text-align: left;
+    margin-top: 5%;
+  }
+}
 
 .advantages__item-text {
   color: #666666;
@@ -815,6 +863,12 @@ button {
   font-weight: 300;
   text-align: center;
   margin-top: 1.875rem;
+}
+@media screen and (max-width: 480px) {
+  .advantages__item-text {
+    text-align: left;
+    margin-top: 2%;
+  }
 }
 
 .advantages__icon-frame {
@@ -832,6 +886,7 @@ button {
     margin-bottom: 0;
     margin-right: 0.8125rem;
     flex-shrink: 0;
+    margin-left: 0;
   }
 }
 
@@ -1132,12 +1187,6 @@ button {
   top: -3.75rem;
 }
 
-.chocco__container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .chocco__accordeon {
   margin-left: auto;
 }
@@ -1145,19 +1194,32 @@ button {
 .chocco__accordeon-item {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-item {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-item {
+    width: initial;
+    min-width: 4rem;
+  }
+}
 
 .chocco__title {
   position: absolute;
-  padding-left: 2.5rem;
-  padding-top: 6.1875rem;
+  top: 13.5%;
+  left: 7%;
 }
 
 .chocco__accordeon-list {
   display: flex;
-  padding: 0rem;
+  max-height: 100%;
+  position: absolute;
   margin-top: 0rem;
-  min-height: 40.625rem;
   height: 100vh;
+  right: 0;
+  top: 0;
 }
 
 .chocco__accordeon-item-title {
@@ -1223,6 +1285,8 @@ button {
 }
 
 .chocco__accordeon-item-title {
+  position: relative;
+  z-index: 10;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 3rem;
@@ -1241,6 +1305,11 @@ button {
   position: absolute;
   top: 1%;
   right: 3%;
+}
+@media screen and (max-width: 768px) {
+  .close-btn {
+    display: initial;
+  }
 }
 .close-btn:hover .close-btn__icon {
   fill: white;
@@ -1261,6 +1330,11 @@ button {
   overflow: hidden;
   background-color: rgba(51, 53, 55, 0.9);
 }
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-item-content {
+    flex: 1;
+  }
+}
 
 .chocco__accordeon-item-text {
   height: 100%;
@@ -1272,6 +1346,16 @@ button {
   font-weight: 400;
   line-height: 1.4375rem;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-item-text {
+    width: 12.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-item-text {
+    width: 15.625rem;
+  }
 }
 
 .order {
@@ -1301,6 +1385,7 @@ button {
 @media screen and (max-width: 768px) {
   .container__order {
     width: 75%;
+    max-width: 45rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1318,6 +1403,11 @@ button {
 .title--order {
   padding-top: 5rem;
   color: #365a49;
+}
+@media screen and (max-width: 768px) {
+  .title--order {
+    padding-top: 3rem;
+  }
 }
 
 .order__form {
@@ -1365,6 +1455,7 @@ button {
 @media screen and (max-width: 768px) {
   .order__form-row--content {
     flex-direction: column;
+    margin-top: -2%;
   }
 }
 
@@ -1412,7 +1503,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .order__form-input {
-    padding: 10px 0.9375rem;
+    padding: 0.625rem 0.9375rem;
   }
 }
 
@@ -1426,11 +1517,21 @@ button {
     height: 80%;
   }
 }
+@media screen and (max-width: 480px) {
+  .order__form-input--textarea {
+    min-width: 19.75rem;
+  }
+}
 
 .switch-controls {
   display: flex;
   flex-direction: column;
   margin-top: 2.125rem;
+}
+@media screen and (max-width: 480px) {
+  .switch-controls {
+    align-items: center;
+  }
 }
 
 .switch-controls__row {
@@ -1619,6 +1720,11 @@ button {
 
 .socials {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    margin-left: -15%;
+  }
 }
 
 .socials__item {

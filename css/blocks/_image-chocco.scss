@@ -11,10 +11,14 @@
 }
 
 
-.hero__img {
+.hero__image-chocco {
   @include tablets {
-    background: url(./../img/bar-tablets.png) no-repeat;
-    background-size: 50%, 65%;
-  
+    background: url(./../../img/bar-tablets.png) no-repeat;
+    background-size: 68%, 65%;
+    width: 100%;
+    height: 59%;
+    margin-left: 15%;
+
   }
 }
+

@@ -72,6 +72,10 @@
 
 .socials {
   display: flex;
+
+  @include phones {
+    margin-left: -15%;
+  }
 }
 
 .socials__item {

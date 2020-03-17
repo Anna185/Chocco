@@ -49,6 +49,7 @@
 
 
   @include phones {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -61,12 +62,24 @@
   color: #666666;
   font-size: 1.125rem;
   font-weight: 400;
+
+  @include phones {
+    width:auto ;
+    padding-bottom:0 ;
+    
+  }
 }
 
 
 
 .advantages__item {
   width: 17.625rem;
+
+  @include phones {
+    width: auto;
+    display: flex;
+    padding-bottom: 10%;
+  }
 
   &::after {
   content:"";
@@ -81,10 +94,6 @@
     content: none;
   }
 
-  @include phones {
-    max-width: initial;
-    text-align: left;
-  }
 }
 
 
@@ -98,6 +107,12 @@
   font-size: 1.6875rem;
   font-weight: 700;
   text-align: center;
+
+
+  @include phones {
+  text-align: left;
+  margin-top: 5%;
+}
 
 }
 
@@ -114,6 +129,11 @@
   font-weight: 300;
   text-align: center;
   margin-top: 1.875rem;
+
+  @include phones {
+    text-align: left;
+    margin-top: 2%;
+  }
 }
 
 
@@ -132,6 +152,7 @@
     margin-bottom: 0;
     margin-right: 0.8125rem;
     flex-shrink: 0;
+    margin-left: 0;
   }
 }
 

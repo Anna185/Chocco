@@ -16,12 +16,6 @@
 
 }
 
-.chocco__container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  
-}
 
 
 .chocco__accordeon {
@@ -31,23 +25,34 @@
 
 .chocco__accordeon-item {
   display: flex;
+
+  @include tablets {
+    width: 5rem;
+  }
+
+  @include phones {
+    width: initial;
+    min-width: 4rem;
+  }
 }
 
 .chocco__title {
   position: absolute; 
-  padding-left: 2.5rem;
-  padding-top: 6.1875rem;
+  top: 13.5%;
+  left: 7%;
+  
 }
 
 
 
 .chocco__accordeon-list {
   display: flex;
-  padding: 0rem;
+  max-height: 100%;
+  position: absolute;
   margin-top: 0rem;
-  min-height: 40.625rem;
   height: 100vh;
-   
+  right: 0;
+  top: 0;
 
 }
 
@@ -126,6 +131,8 @@
 
 
 .chocco__accordeon-item-title {
+  position: relative;
+  z-index:10 ;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 3rem;
@@ -149,6 +156,10 @@
   top: 1%;
   right: 3%;
 
+  @include tablets {
+    display: initial;
+  }
+
   &:hover {
     .close-btn__icon {
       fill: white;
@@ -170,6 +181,10 @@
   width: 0;
   overflow: hidden;
   background-color: rgb(51, 53, 55, .9);
+
+  @include phones {
+    flex: 1;
+  }
 }
 
  .chocco__accordeon-item-text {
@@ -182,4 +197,12 @@
   font-weight: 400;
   line-height:1.4375rem;
   color: #ffffff;
+
+  @include tablets {
+    width: 12.5rem;
+  }
+
+  @include phones {
+    width: 15.625rem;
+  }
 }
