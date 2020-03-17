@@ -13,7 +13,7 @@
 
 .hero__image-chocco {
   @include tablets {
-    background: url(./../../img/bar-tablets.png) no-repeat;
+    background: url(./img/bar-tablets.png) no-repeat;
     background-size: 68%, 65%;
     width: 100%;
     height: 59%;
