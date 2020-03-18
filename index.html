@@ -55,10 +55,10 @@
             <a href="tel:88009039090" class="contacts__phone">8 800 903 90 90</a>
           </div>
           <button class="hamburger">
-              <svg class="hamburger__icon">
-                <use xlink:href="./css/svg/sprites.svg#gamburger"></use>
-              </svg>
-            </button>
+            <svg class="hamburger__icon">
+              <use xlink:href="./css/svg/sprites.svg#gamburger"></use>
+            </svg>
+          </button>
         </header>
         <div class="hero__content">
           <div class="hero__cta">
@@ -92,10 +92,14 @@
               </ul>
             </div>
           </div>
-          <div class="hero__image-chocco">
-            
-          </div>
-        </div>
+          
+          <source class="hero__image-chocco">
+          <source class="hero__image-chocco-pic" srcset="./img/bar-tablets.png" media="screen and (max-widht:768px)">
+          </source>
+          <img class="hero__image-chocco-pic" src="./img/bar.png" alt="desktop pic">
+          </picture>
+      </div>
+      </div>
     </section>
     <section class="section advantages">
       <div class="container advantages__container">
@@ -204,70 +208,70 @@
       </div>
     </section>
     <section class="section chocco">
-      
-        <h2 class="title title--white chocco__title">Меню</h2>
-        <div class="chocco__accordeon">
-          <ul class="chocco__accordeon-list">
-            <li class="chocco__accordeon-item active">
-              <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--milk">
-                <span class="chocco__accordeon-item-title">Батончики с молоком</span>
-              </button>
-              <div class="chocco__accordeon-item-content">
-                <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                  миндальным
-                  молоком. Так и вкуснее, и полезнее.
-                  Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                  можно
-                  питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                  спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-                <button class="close-btn">
-                  <svg class="close-btn__icon">
-                    <use xlink:href="./css/svg/sprites.svg#close"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="chocco__accordeon-item">
-              <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--honey">
-                <span class="chocco__accordeon-item-title">С мёдом и фруктами</span>
-              </button>
-              <div class="chocco__accordeon-item-content">
-                <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                  миндальным
-                  молоком. Так и вкуснее, и полезнее.
-                  Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                  можно
-                  питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                  спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-                <button class="close-btn">
-                  <svg class="close-btn__icon">
 
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="chocco__accordeon-item">
-              <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--berries">
-                <span class="chocco__accordeon-item-title">Дикие ягоды</span>
+      <h2 class="title title--white chocco__title">Меню</h2>
+      <div class="chocco__accordeon">
+        <ul class="chocco__accordeon-list">
+          <li class="chocco__accordeon-item active">
+            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--milk">
+              <span class="chocco__accordeon-item-title">Батончики с молоком</span>
+            </button>
+            <div class="chocco__accordeon-item-content">
+              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+                миндальным
+                молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+                можно
+                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+              <button class="close-btn">
+                <svg class="close-btn__icon">
+                  <use xlink:href="./css/svg/sprites.svg#close"></use>
+                </svg>
               </button>
-              <div class="chocco__accordeon-item-content">
-                <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                  миндальным
-                  молоком. Так и вкуснее, и полезнее.
-                  Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                  можно
-                  питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                  спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-                <button class="close-btn">
-                  <svg class="close-btn__icon">
+            </div>
+          </li>
+          <li class="chocco__accordeon-item">
+            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--honey">
+              <span class="chocco__accordeon-item-title">С мёдом и фруктами</span>
+            </button>
+            <div class="chocco__accordeon-item-content">
+              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+                миндальным
+                молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+                можно
+                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+              <button class="close-btn">
+                <svg class="close-btn__icon">
 
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-    
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="chocco__accordeon-item">
+            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--berries">
+              <span class="chocco__accordeon-item-title">Дикие ягоды</span>
+            </button>
+            <div class="chocco__accordeon-item-content">
+              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+                миндальным
+                молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+                можно
+                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+              <button class="close-btn">
+                <svg class="close-btn__icon">
+
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </section>
     <section class="section reviews">
       <div class="container reviews__container">
@@ -310,10 +314,10 @@
       </div>
     </section>
     <section class="section order">
-        <div class="container container__order">
-      <h2 class="title title--order">Закажите доставку</h2>
-      <form class="order__form">
-        
+      <div class="container container__order">
+        <h2 class="title title--order">Закажите доставку</h2>
+        <form class="order__form">
+
           <div class="order__form-wrap">
             <div class="order__form-row order__form-row--content">
               <div class="order__form-column">
@@ -399,7 +403,7 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </form>
     </section>
     <section class="section our-contacts">
