@@ -371,6 +371,7 @@ html {
   width: 100%;
   overflow: hidden;
   position: relative;
+  min-width: 320px;
 }
 
 .container {
@@ -579,7 +580,7 @@ button {
 @media screen and (max-width: 768px) {
   .hero__cta {
     width: auto;
-    margin-bottom: 27%;
+    margin-bottom: 20%;
   }
 }
 
@@ -688,10 +689,9 @@ button {
   z-index: 2;
 }
 
-.hero__image-chocco-pic {
+.hero-pic-image__img {
   max-width: 100%;
   max-height: 100%;
-  overflow: hidden;
 }
 
 .pagination {
@@ -738,6 +738,9 @@ button {
 @media screen and (max-width: 768px) {
   .advantages {
     background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .advantages::after {
@@ -755,8 +758,8 @@ button {
   }
 }
 @media screen and (max-width: 480px) {
-  .advantages {
-    content: none;
+  .advantages::after {
+    background-image: none;
   }
 }
 
@@ -866,6 +869,11 @@ button {
   border-radius: 50%;
   margin-left: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .advantages__icon-frame {
+    margin-left: 28%;
+  }
+}
 @media screen and (max-width: 480px) {
   .advantages__icon-frame {
     margin-bottom: 0;
@@ -890,6 +898,11 @@ button {
   background-image: url(./../img/background-reviews.png);
   background-repeat: no-repeat;
   background-position-y: 31.25rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews {
+    background-image: none;
+  }
 }
 .reviews::after {
   content: "";
@@ -923,12 +936,7 @@ button {
   height: 10.4375rem;
   background: url(./../img/raspberry-reviews.png) no-repeat;
   top: 0rem;
-  left: 87%;
-}
-@media screen and (max-width: 768px) {
-  .reviews__background::after {
-    left: 82%;
-  }
+  right: 0;
 }
 .reviews__background::before {
   content: "";
@@ -945,6 +953,7 @@ button {
     flex-direction: column;
     align-items: center;
     width: 97%;
+    height: auto;
   }
 }
 
@@ -1046,6 +1055,7 @@ button {
 
 .team {
   position: relative;
+  height: 100vh;
 }
 
 .team__title {
@@ -1054,6 +1064,11 @@ button {
 @media screen and (max-width: 768px) {
   .team__title {
     margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title {
+    padding-top: 0;
   }
 }
 
@@ -1067,6 +1082,11 @@ button {
   .team__list-accordeon {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__list-accordeon {
+    margin-top: 0;
   }
 }
 
@@ -1171,9 +1191,10 @@ button {
   left: 2.5rem;
   top: -3.75rem;
 }
-
-.chocco__accordeon {
-  margin-left: auto;
+@media screen and (max-width: 480px) {
+  .chocco::after {
+    background-image: none;
+  }
 }
 
 .chocco__accordeon-item {
@@ -1181,13 +1202,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .chocco__accordeon-item {
-    width: 5rem;
+    flex: 1;
+    transition: flex 1s;
   }
 }
 @media screen and (max-width: 480px) {
   .chocco__accordeon-item {
     width: initial;
-    min-width: 4rem;
   }
 }
 
@@ -1206,11 +1227,27 @@ button {
   right: 0;
   top: 0;
 }
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-list {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-list {
+    padding-left: 0;
+  }
+}
 
 .chocco__accordeon-item-title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   display: inline-block;
+}
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-item-title {
+    z-index: auto;
+  }
 }
 
 .chocco__accordeon-item-btn {
@@ -1277,10 +1314,32 @@ button {
   font-size: 3rem;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-item-title {
+    width: 5rem;
+  }
+}
 
 .chocco__accordeon-item.active .chocco__accordeon-item-content {
   width: 33.125rem;
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-item.active .chocco__accordeon-item-content {
+    flex: 1;
+    width: 63vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chocco__accordeon-item.active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100vw;
+  }
 }
 
 .close-btn {
@@ -1332,14 +1391,9 @@ button {
   line-height: 1.4375rem;
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
-  .chocco__accordeon-item-text {
-    width: 12.5rem;
-  }
-}
 @media screen and (max-width: 480px) {
   .chocco__accordeon-item-text {
-    width: 15.625rem;
+    width: 100%;
   }
 }
 
@@ -1366,6 +1420,9 @@ button {
   width: 100%;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .container__order {
@@ -1379,14 +1436,8 @@ button {
   }
 }
 
-.order__form-wrap {
-  display: flex;
-  color: #365a49;
-  flex-direction: column;
-}
-
 .title--order {
-  padding-top: 5rem;
+  padding-top: 0rem;
   color: #365a49;
 }
 @media screen and (max-width: 768px) {
@@ -1397,6 +1448,14 @@ button {
 
 .order__form {
   position: relative;
+  display: flex;
+  color: #365a49;
+  margin-top: 5%;
+}
+@media (max-width: 950px) {
+  .order__form {
+    margin-left: 3%;
+  }
 }
 .order__form:before {
   content: "";
@@ -1438,7 +1497,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .order__form-row--content {
+  .order__form {
     flex-direction: column;
     margin-top: -2%;
   }
@@ -1468,6 +1527,11 @@ button {
 }
 .order__form-column:last-child {
   margin-right: 0rem;
+}
+@media (max-width: 950px) {
+  .order__form-column:last-child {
+    margin-right: 1.25rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .order__form-column {
@@ -1732,4 +1796,14 @@ button {
 }
 .socials__item-icon:hover {
   fill: #000000;
+}
+
+.phone-number__text {
+  color: #365a49;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
 }

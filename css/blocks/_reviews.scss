@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-position-y: 31.25rem;
 
+  @include phones {
+    background-image: none;
+    
+  }
+
   &::after {
     content:"";
     position: absolute;
@@ -29,7 +34,7 @@
   position: relative;
   padding-top:3.1875rem;
   display: flex;
-
+  
   &::after {
     content: ""; 
     position: absolute;
@@ -37,11 +42,9 @@
     height: 10.4375rem;
     background: url(./../img/raspberry-reviews.png) no-repeat;
     top:0rem;
-    left:87% ;
+    right:0;
 
-    @include tablets {
-      left: 82%;
-    }
+    
   }
   &::before {
     content: "";
@@ -58,9 +61,11 @@
     flex-direction: column;
     align-items: center;
     width: 97%;
+    height:auto ;
   }
 
 }
+
 
 .reviews__description {
   @include tablets {
@@ -114,6 +119,7 @@
   }
 }
 
+
 .reviews__username {
   color: #000000;
   font-family: "Alegreya Sans";
@@ -150,4 +156,5 @@
     width: 8.1875rem;
     height: 8.3125rem;
   }
+
 }

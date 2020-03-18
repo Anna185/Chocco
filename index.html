@@ -92,13 +92,12 @@
               </ul>
             </div>
           </div>
-          
-          <source class="hero__image-chocco">
-          <source class="hero__image-chocco-pic" srcset="./img/bar-tablets.png" media="screen and (max-widht:768px)">
-          </source>
-          <img class="hero__image-chocco-pic" src="./img/bar.png" alt="desktop pic">
+          <picture class="hero-pic__content">
+          <source class="hero-pic-image">
+          <source class="hero-pic-image__img" srcset="./img/bar-tablets.png" media="screen and (max-widht:768px)">
+          <img class="hero-pic-image__img" src="./img/bar.png" alt="desktop pic">
           </picture>
-      </div>
+        </div>
       </div>
     </section>
     <section class="section advantages">
@@ -208,70 +207,64 @@
       </div>
     </section>
     <section class="section chocco">
-
       <h2 class="title title--white chocco__title">Меню</h2>
-      <div class="chocco__accordeon">
-        <ul class="chocco__accordeon-list">
-          <li class="chocco__accordeon-item active">
-            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--milk">
-              <span class="chocco__accordeon-item-title">Батончики с молоком</span>
+      <ul class="chocco__accordeon-list">
+        <li class="chocco__accordeon-item active">
+          <button type="button" class="chocco__accordeon-item-btn chocco__accordeon-item-btn--milk">
+            <span class="chocco__accordeon-item-title">Батончики с молоком</span>
+          </button>
+          <div class="chocco__accordeon-item-content">
+            <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+              миндальным
+              молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+              можно
+              питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+              спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+            <button type="button" class="close-btn">
+              <svg class="close-btn__icon">
+                <use xlink:href="./css/svg/sprites.svg#close"></use>
+              </svg>
             </button>
-            <div class="chocco__accordeon-item-content">
-              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                миндальным
-                молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                можно
-                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-              <button class="close-btn">
-                <svg class="close-btn__icon">
-                  <use xlink:href="./css/svg/sprites.svg#close"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="chocco__accordeon-item">
-            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--honey">
-              <span class="chocco__accordeon-item-title">С мёдом и фруктами</span>
+          </div>
+        </li>
+        <li class="chocco__accordeon-item">
+          <button type="button" class="chocco__accordeon-item-btn chocco__accordeon-item-btn--honey">
+            <span class="chocco__accordeon-item-title">С мёдом и фруктами</span>
+          </button>
+          <div class="chocco__accordeon-item-content">
+            <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+              миндальным
+              молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+              можно
+              питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+              спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+            <button type="button" class="close-btn">
+              <svg class="close-btn__icon">
+              </svg>
             </button>
-            <div class="chocco__accordeon-item-content">
-              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                миндальным
-                молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                можно
-                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-              <button class="close-btn">
-                <svg class="close-btn__icon">
-
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="chocco__accordeon-item">
-            <button class="chocco__accordeon-item-btn chocco__accordeon-item-btn--berries">
-              <span class="chocco__accordeon-item-title">Дикие ягоды</span>
+          </div>
+        </li>
+        <li class="chocco__accordeon-item">
+          <button type="button" class="chocco__accordeon-item-btn chocco__accordeon-item-btn--berries">
+            <span class="chocco__accordeon-item-title">Дикие ягоды</span>
+          </button>
+          <div class="chocco__accordeon-item-content">
+            <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
+              миндальным
+              молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
+              можно
+              питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+              спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+            <button type="button" class="close-btn">
+              <svg class="close-btn__icon">
+              </svg>
             </button>
-            <div class="chocco__accordeon-item-content">
-              <p class="chocco__accordeon-item-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                миндальным
-                молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что
-                можно
-                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
-                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-              <button class="close-btn">
-                <svg class="close-btn__icon">
-
-                </svg>
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
-
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="section reviews">
       <div class="container reviews__container">
@@ -317,88 +310,83 @@
       <div class="container container__order">
         <h2 class="title title--order">Закажите доставку</h2>
         <form class="order__form">
-
-          <div class="order__form-wrap">
-            <div class="order__form-row order__form-row--content">
-              <div class="order__form-column">
-                <div class="order__form-row">
-                  <label class="order__form-block">
-                    <div class="order__block-title">Имя</div>
-                    <input type="text" class="order__form-input">
+          <div class="order__form-column">
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__block-title">Имя</div>
+                <input type="text" class="order__form-input">
+              </label>
+              <label class="order__form-block">
+                <div class="order__block-title">Телефон</div>
+                <input type="text" class="order__form-input" placeholder="89022348912">
+              </label>
+            </div>
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__block-title">Улица</div>
+                <input type="text" class="order__form-input">
+              </label>
+            </div>
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__block-title">Дом</div>
+                <input type="text" class="order__form-input">
+              </label>
+              <label class="order__form-block">
+                <div class="order__block-title">Корпус</div>
+                <input type="text" class="order__form-input">
+              </label>
+              <label class="order__form-block">
+                <div class="order__block-title">Квартира</div>
+                <input type="text" class="order__form-input">
+              </label>
+              <label class="order__form-block">
+                <div class="order__block-title">Этаж</div>
+                <input type="text" class="order__form-input">
+              </label>
+            </div>
+          </div>
+          <div class="order__form-column">
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__block-title">Комментарий</div>
+                <textarea class="order__form-input order__form-input--textarea"></textarea>
+              </label>
+            </div>
+            <div class="order__form-switch">
+              <div class="switch-controls">
+                <div class="switch-controls__row">
+                  <label class="switch-controls__block">
+                    <input type="radio" name="switch-controls__radio" class="switch-controls__elem">
+                    <div class="switch-controls__text">
+                      <div class="switch-controls__appearance"></div>
+                      <div class="switch-controls__block-title">Потребуется сдача</div>
+                    </div>
                   </label>
-                  <label class="order__form-block">
-                    <div class="order__block-title">Телефон</div>
-                    <input type="text" class="order__form-input" placeholder="89022348912">
+                  <label class="switch-controls__block">
+                    <input type="radio" name="switch-controls__radio" class="switch-controls__elem">
+                    <div class="switch-controls__text">
+                      <div class="switch-controls__appearance"></div>
+                      <div class="switch-controls__block-title">Оплата по карте</div>
+                    </div>
                   </label>
                 </div>
-                <div class="order__form-row">
-                  <label class="order__form-block">
-                    <div class="order__block-title">Улица</div>
-                    <input type="text" class="order__form-input">
-                  </label>
-                </div>
-                <div class="order__form-row">
-                  <label class="order__form-block">
-                    <div class="order__block-title">Дом</div>
-                    <input type="text" class="order__form-input">
-                  </label>
-                  <label class="order__form-block">
-                    <div class="order__block-title">Корпус</div>
-                    <input type="text" class="order__form-input">
-                  </label>
-                  <label class="order__form-block">
-                    <div class="order__block-title">Квартира</div>
-                    <input type="text" class="order__form-input">
-                  </label>
-                  <label class="order__form-block">
-                    <div class="order__block-title">Этаж</div>
-                    <input type="text" class="order__form-input">
+                <div class="switch-controls__row">
+                  <label class="switch-controls__block switch-controls__block--checkbox">
+                    <input type="checkbox" class="switch-controls__elem">
+                    <div class="switch-controls__text">
+                      <div class="switch-controls__appearance"></div>
+                      <div class="switch-controls__block-title">Не перезванивать</div>
+                    </div>
                   </label>
                 </div>
               </div>
+            </div>
+            <div class="order__form-row">
               <div class="order__form-column">
-                <div class="order__form-row">
-                  <label class="order__form-block">
-                    <div class="order__block-title">Комментарий</div>
-                    <textarea class="order__form-input order__form-input--textarea"></textarea>
-                  </label>
-                </div>
-                <div class="order__form-switch">
-                  <div class="switch-controls">
-                    <div class="switch-controls__row">
-                      <label class="switch-controls__block">
-                        <input type="radio" name="switch-controls__radio" class="switch-controls__elem">
-                        <div class="switch-controls__text">
-                          <div class="switch-controls__appearance"></div>
-                          <div class="switch-controls__block-title">Потребуется сдача</div>
-                        </div>
-                      </label>
-                      <label class="switch-controls__block">
-                        <input type="radio" name="switch-controls__radio" class="switch-controls__elem">
-                        <div class="switch-controls__text">
-                          <div class="switch-controls__appearance"></div>
-                          <div class="switch-controls__block-title">Оплата по карте</div>
-                        </div>
-                      </label>
-                    </div>
-                    <div class="switch-controls__row">
-                      <label class="switch-controls__block switch-controls__block--checkbox">
-                        <input type="checkbox" class="switch-controls__elem">
-                        <div class="switch-controls__text">
-                          <div class="switch-controls__appearance"></div>
-                          <div class="switch-controls__block-title">Не перезванивать</div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="order__form-row">
-                  <div class="order__form-column">
-                    <div class="order__form-buttons">
-                      <button type="submit" class="btn btn__order">Заказать</button>
-                      <button type="reset" class="btn btn__order--reset">Очистить</button>
-                    </div>
-                  </div>
+                <div class="order__form-buttons">
+                  <button type="submit" class="btn btn__order">Заказать</button>
+                  <button type="reset" class="btn btn__order--reset">Очистить</button>
                 </div>
               </div>
             </div>
@@ -419,8 +407,8 @@
             <svg class="phone-number__icon">
               <use xlink:href="./css/svg/sprites.svg#phone"></use>
             </svg>
-            <span class="phone-number__text">8 800 903 90 90</span>
-            </a>
+            <a href="tel:88009039090" class="phone-number__text">8 800 903 90 90</a>
+            
           </div>
 
           <div class="footer__col-right">

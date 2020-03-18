@@ -22,6 +22,9 @@
   width: 100%;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include tablets {
     width: 75%;
@@ -34,14 +37,10 @@
 }
 
 
-.order__form-wrap {
-  display: flex;
-  color: #365a49;
-  flex-direction: column;
-}
+
 
 .title--order {
-  padding-top: 5rem;
+  padding-top: 0rem;
   color: #365a49;
 
   @include tablets {
@@ -52,6 +51,13 @@
 
 .order__form {
   position: relative;
+  display: flex;
+  color: #365a49;
+  margin-top: 5%;
+
+  @media (max-width:950px) {
+    margin-left: 3%;
+  }
 
   &:before {
     content: "";
@@ -91,11 +97,12 @@
 
   &:last-child {
     margin-bottom: 0rem;
+
   }
 
 }
 
-.order__form-row--content {
+.order__form {
   @include tablets {
     flex-direction: column;
     margin-top: -2%;
@@ -129,6 +136,10 @@
 
   &:last-child {
     margin-right: 0rem;
+
+    @media (max-width:950px) {
+      margin-right: 1.25rem;
+    }
   }
 
   @include tablets {

@@ -1,5 +1,6 @@
 .team {
   position: relative;
+  height:100vh ;
 }
 
 .team__title {
@@ -7,6 +8,10 @@
 
   @include tablets {
     margin-bottom: 1rem;
+  }
+
+  @include phones {
+    padding-top: 0;
   }
 }
 
@@ -22,6 +27,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @include phones {
+    margin-top: 0;
+}
 }
 
 .team__item-accordeon {

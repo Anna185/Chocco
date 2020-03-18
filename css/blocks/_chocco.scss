@@ -12,28 +12,32 @@
     background-image:url(./../img/raspberry-team.png);
     left: 2.5rem;
     top: -3.75rem; 
+
+    @include phones {
+      background-image: none;
+    }
   }
 
 }
 
 
 
-.chocco__accordeon {
-  margin-left:auto ;
-}
+
 
 
 .chocco__accordeon-item {
   display: flex;
 
   @include tablets {
-    width: 5rem;
+      flex: 1;
+      transition: flex 1s;
   }
 
   @include phones {
     width: initial;
-    min-width: 4rem;
+    
   }
+
 }
 
 .chocco__title {
@@ -54,12 +58,23 @@
   right: 0;
   top: 0;
 
+  @include tablets {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  @include phones {
+  padding-left: 0;
+  }
 }
 
 .chocco__accordeon-item-title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   display: inline-block;
+
+  @include phones {
+    z-index: auto;
+  }
   
 
 }
@@ -137,6 +152,10 @@
   font-family: "Alegreya Sans";
   font-size: 3rem;
   font-weight: 700;
+
+  @include tablets {
+  width: 5rem;
+  }
 }
 
 
@@ -144,9 +163,27 @@
   .chocco__accordeon-item-content {
     width: 33.125rem;
     height: 100%;
-  }
+
+    @include tablets {
+      flex: 1;
+      width: 63vw;
+      }
 
 }
+}
+
+
+.chocco__accordeon-item.active {
+  @include phones {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100vw;
+}
+}
+
 
 .close-btn {
   border: none;
@@ -181,6 +218,7 @@
   width: 0;
   overflow: hidden;
   background-color: rgb(51, 53, 55, .9);
+  
 
   @include phones {
     flex: 1;
@@ -198,11 +236,7 @@
   line-height:1.4375rem;
   color: #ffffff;
 
-  @include tablets {
-    width: 12.5rem;
-  }
-
   @include phones {
-    width: 15.625rem;
+    width: 100%;
   }
 }
