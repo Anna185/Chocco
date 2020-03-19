@@ -1,6 +1,17 @@
 
   
+.hero-pic__content {
+  overflow: hidden;
 
+  @media (max-width: 950px) {
+    margin-right: 11%;
+    margin-top: 8%;
+}
+
+@media (max-width: 768px) {
+  margin-left: 16%;
+}
+}
 
 
 .hero-pic-image__img {

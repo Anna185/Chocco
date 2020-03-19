@@ -441,6 +441,13 @@ button {
 .container--hero {
   height: 100%;
 }
+@media (max-width: 480px) {
+  .container--hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .hero {
   background-color: #86c3d7;
@@ -527,6 +534,11 @@ button {
 .menu {
   width: 39.8125rem;
 }
+@media (max-width: 950px) {
+  .menu {
+    width: 32.8125rem;
+  }
+}
 
 @media (max-width: 768px) {
   .menu {
@@ -565,8 +577,15 @@ button {
   text-decoration: none;
   padding-right: 1.25rem;
 }
+@media (max-width: 950px) {
+  .contacts__phone {
+    padding-right: 0rem;
+  }
+}
 
-.phone-number__icon--header {
+.phone-number__header {
+  width: 0.75rem;
+  height: 0.6875rem;
   fill: #ffffff;
 }
 
@@ -687,6 +706,21 @@ button {
   fill: #c6f7ff;
   margin-right: 6%;
   z-index: 2;
+}
+
+.hero-pic__content {
+  overflow: hidden;
+}
+@media (max-width: 950px) {
+  .hero-pic__content {
+    margin-right: 11%;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-pic__content {
+    margin-left: 16%;
+  }
 }
 
 .hero-pic-image__img {
@@ -827,6 +861,11 @@ button {
     content: none;
   }
 }
+@media (max-width: 950px) {
+  .advantages__item::after {
+    content: none;
+  }
+}
 .advantages__item:last-child::after {
   background: none;
 }
@@ -929,6 +968,11 @@ button {
   padding-top: 3.1875rem;
   display: flex;
 }
+@media (max-width: 950px) {
+  .reviews__background {
+    width: 92%;
+  }
+}
 .reviews__background::after {
   content: "";
   position: absolute;
@@ -937,6 +981,11 @@ button {
   background: url(./../img/raspberry-reviews.png) no-repeat;
   top: 0rem;
   right: 0;
+}
+@media (max-width: 950px) {
+  .reviews__background::after {
+    opacity: 0.4;
+  }
 }
 .reviews__background::before {
   content: "";
@@ -992,6 +1041,12 @@ button {
   padding-left: 2.8125rem;
   padding-right: 1.25rem;
 }
+@media (max-width: 950px) {
+  .reviews__left-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .reviews__description-text {
   width: 27.25rem;
@@ -1041,7 +1096,17 @@ button {
     height: 8.3125rem;
   }
 }
+@media (max-width: 950px) {
+  .avatar-img {
+    max-width: 100%;
+  }
+}
 
+@media (max-width: 950px) {
+  .avatar {
+    width: 82%;
+  }
+}
 .section__how-we-work {
   background-color: #f8faf9;
   position: relative;
@@ -1093,6 +1158,7 @@ button {
 .team__item-accordeon {
   margin-right: 1.25rem;
   text-align: center;
+  max-width: 25%;
 }
 .team__item-accordeon:last-child {
   margin-right: 0rem;
@@ -1100,6 +1166,11 @@ button {
 @media screen and (max-width: 768px) {
   .team__item-accordeon {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 980px) {
+  .team__item-accordeon {
+    margin-right: 0;
   }
 }
 
@@ -1127,6 +1198,11 @@ button {
   }
 }
 
+@media (max-width: 980px) {
+  .team__item-accordeon-photo-img {
+    max-width: 100%;
+  }
+}
 .team__item-accordeon-info {
   padding: 0rem;
   margin-top: 0.8125rem;
@@ -1202,13 +1278,14 @@ button {
 }
 @media screen and (max-width: 768px) {
   .chocco__accordeon-item {
-    flex: 1;
-    transition: flex 1s;
+    flex: 0;
+    width: initial;
   }
 }
 @media screen and (max-width: 480px) {
   .chocco__accordeon-item {
     width: initial;
+    flex: 0;
   }
 }
 
@@ -1324,12 +1401,6 @@ button {
   width: 33.125rem;
   height: 100%;
 }
-@media screen and (max-width: 768px) {
-  .chocco__accordeon-item.active .chocco__accordeon-item-content {
-    flex: 1;
-    width: 63vw;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .chocco__accordeon-item.active {
@@ -1337,7 +1408,17 @@ button {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 20;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chocco__accordeon-item.active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
     width: 100vw;
   }
 }

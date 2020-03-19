@@ -36,6 +36,7 @@
 .team__item-accordeon {
   margin-right: 1.25rem;
   text-align: center;
+  max-width:25%;
 
   &:last-child {
     margin-right: 0rem;
@@ -43,6 +44,10 @@
   @include tablets {
     margin-bottom: 0;
   }
+  @media (max-width:980px) {
+    margin-right: 0;
+  }
+
 }
 
 
@@ -72,6 +77,13 @@
     margin-bottom: 1.25rem;
   }
 }
+
+  @media (max-width: 980px) {
+    .team__item-accordeon-photo-img {
+    max-width:100% ;
+  }
+}
+
 
 .team__item-accordeon-info {
   padding: 0rem;

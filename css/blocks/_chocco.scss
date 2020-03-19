@@ -29,12 +29,13 @@
   display: flex;
 
   @include tablets {
-      flex: 1;
-      transition: flex 1s;
+      flex: 0;
+      width:initial ;
   }
 
   @include phones {
     width: initial;
+    flex:0;
     
   }
 
@@ -164,12 +165,7 @@
     width: 33.125rem;
     height: 100%;
 
-    @include tablets {
-      flex: 1;
-      width: 63vw;
-      }
-
-}
+  }   
 }
 
 
@@ -179,10 +175,21 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 20;
+  width: 100vw;
+}
+
+@include tablets {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
   width: 100vw;
 }
 }
+
+
 
 
 .close-btn {
@@ -195,6 +202,7 @@
 
   @include tablets {
     display: initial;
+  
   }
 
   &:hover {

@@ -1,5 +1,11 @@
 .container--hero {
   height: 100%;
+
+  @media (max-width:480px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 
 

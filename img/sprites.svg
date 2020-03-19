@@ -77,10 +77,8 @@
     <path d="M36.7 34.7c0 1.1-.9 2-2 2h-9.4V22.5h4.8l.7-5.5h-5.5v-3.5c0-1.6.4-2.7 2.7-2.7h2.9v-5c-.5-.1-2.2-.2-4.3-.2-4.2 0-7.1 2.6-7.1 7.3V17h-4.8v5.5h4.8v14.2H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h32.7c1.1 0 2 .9 2 2v32.7z"></path>
   </symbol>
 	<svg width="0" height="0" class="hidden">
-  <svg width="0" height="0" class="hidden">
-  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="inst">
-    <image width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABi0lEQVQ4T62VvSuFcRTHP18l8pKBhAmDUVIKWQyY/ANSkkUZJBYZGIxENgYZLGYxSCR5GcXEZvCSEgOl1D061+/Wdd3nern3TL+e8zuf55zvOc95ZGYtwDrQQHZ2BfTLzC5zAEukcuVA+2diZ8BBiO0F6v2cDXBI0qpDzGwRGM0WOChpLZfAPWAzlDwANP0mw3dgBdgCYkA3MAIUROmeSUOH9UjaTw42s1bAnxWmgyaAN0BHuOCl1AFLkuJCp5qZzQJTwD3Q7n0BzoHSBPBaUq2ZFQGvAeDZ7UQAHXIUfNWS7s3sGSjLBOyStBsBbAOOfwSGEfDya4B5SRMRwGlgBngCKiTF0mYYgHPAOPAGdEo6TWmKj8chUAIsSxoOcd9LDo4K4AKoCtAFYDsI3wOMBdgj0CjpNiMwOJvD7Dk0nTmsV9JJwhlZctKFSmAS6AP87OagDWBW0l2KFOlLjmiCy5An6SEiY18QX4D+Zp8n/zr+bGaWHzpenLxgHfryZ9pngHe8HIgv2Jz+Aj4A2CDq5YU6f2AAAAAASUVORK5CYII="
-      opacity=".3"></image>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.663 36.664" id="inst">
+    <path  d="M32.305 0H4.357A4.352 4.352 0 0 0 0 4.349v27.967c0 2.4 1.95 4.348 4.357 4.348h27.947a4.353 4.353 0 0 0 4.358-4.348V4.349A4.351 4.351 0 0 0 32.305 0m-5.953 5.729c0-.632.513-1.146 1.146-1.146h3.438c.632 0 1.145.514 1.145 1.146v3.438c0 .633-.513 1.146-1.145 1.146h-3.438a1.146 1.146 0 0 1-1.146-1.146V5.729zm-7.978 5.612c3.894 0 7.051 3.149 7.051 7.033 0 3.885-3.157 7.034-7.051 7.034s-7.051-3.148-7.051-7.034c0-3.884 3.157-7.033 7.051-7.033M33.226 32.08c0 .633-.513 1.146-1.146 1.146H4.583a1.147 1.147 0 0 1-1.146-1.146V14.895H8.02c-.597.858-.798 2.462-.798 3.479 0 6.135 5.003 11.127 11.152 11.127s11.153-4.992 11.153-11.127c0-1.018-.145-2.596-.885-3.479h4.583V32.08z"></path>
   </symbol>
   <svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22.1" id="gamburger">

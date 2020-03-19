@@ -34,6 +34,10 @@
   position: relative;
   padding-top:3.1875rem;
   display: flex;
+
+  @media (max-width:950px) {
+    width:92% ;
+  }
   
   &::after {
     content: ""; 
@@ -43,6 +47,10 @@
     background: url(./../img/raspberry-reviews.png) no-repeat;
     top:0rem;
     right:0;
+
+    @media (max-width:950px) {
+      opacity:0.4;
+    }
 
     
   }
@@ -103,6 +111,11 @@
 .reviews__left-col {
   padding-left: 2.8125rem;
   padding-right: 1.25rem;
+
+  @media (max-width:950px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .reviews__description-text {
@@ -156,5 +169,13 @@
     width: 8.1875rem;
     height: 8.3125rem;
   }
-
+  @media (max-width:950px) {
+    max-width:100% ;
+  }
 }
+
+@media (max-width:950px) {
+  .avatar {
+    width: 82%;
+  }
+  }

@@ -13,8 +13,14 @@
   text-decoration: none;
   padding-right:1.25rem ;
 
+  @media (max-width:950px) {
+    padding-right:0rem ;
+  }
+
 }
 
-.phone-number__icon--header {
+.phone-number__header {
+  width: 0.75rem;
+  height: 0.6875rem;
   fill: #ffffff;
 }

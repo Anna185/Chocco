@@ -1,5 +1,9 @@
 .menu {
   width: 39.8125rem;
+
+  @media (max-width: 950px) {
+    width:32.8125rem ;
+}
 }
 
 @media (max-width: 768px) {
