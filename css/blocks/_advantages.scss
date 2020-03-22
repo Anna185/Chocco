@@ -11,14 +11,7 @@
     justify-content: center; 
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 19.6875rem;
-    background: url(./../img/raspberry.png) no-repeat;
-    top: 65%;
-    left: 0;
+
   
 
     @include tablets {
@@ -29,7 +22,7 @@
    background-image: none;
     }
     
-  }
+  
   
 }
 

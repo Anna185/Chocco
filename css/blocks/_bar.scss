@@ -1,14 +1,38 @@
 .arrow {
   position: absolute;
 }
+
 .arrow--left {
   left: -1.5625rem;
+
+  @include tablets {
+    left:9.375rem;
+    top:24%;
+  }
+
+@include phones {
+  left: 10px;
+  top: 21%;
+  }
 }
+
 .arrow--left .arrow__img {
   transform: rotate(180deg);
 }
+
 .arrow--right {
   right: -1.5625rem;
+
+  @include phones {
+    right: 10px;
+    top: 21%;
+  }
+
+  @include tablets {
+    right:9.375rem;
+    top:24%;
+  }
+  
 }
 
 .arrow__img {
@@ -21,10 +45,8 @@
   display: flex;
   justify-content: center;
   padding-bottom: 3.75rem;
-
-  
-    
 }
+
 @media screen and (max-width: 768px) {
   .bar {
     flex-direction: column;
@@ -39,6 +61,7 @@
   margin-right: 2.5rem;
   width: 31.25rem;
 }
+
 @media screen and (max-width: 768px) {
   .bar__pic {
     width: 18.75rem;
@@ -49,6 +72,10 @@
 
 .bar__pic-img {
   flex-shrink: 0;
+
+  @media (max-width:950px) {
+    width: 95%;
+  }
 }
 
 .bar__content {
@@ -57,11 +84,17 @@
   height: 28.4375rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width:950px) {
+    margin-right: 16%;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .bar__content {
     display: flex;
     align-items: center;
+    margin-right: auto
   }
 }
 
@@ -71,9 +104,12 @@
   cursor: pointer;
   position: relative;
 }
+
 .bar__composition:hover .bar__composition-block {
   display: block;
+  padding-left: 0;
 }
+
 @media screen and (max-width: 768px) {
   .bar__composition {
     display: none;
@@ -102,7 +138,7 @@
   margin-bottom: 0.1875rem;
 }
 
- .composition {
+.composition {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -120,6 +156,12 @@
   }
 }
 
+@media (max-width:950px) {
+  .bar__composition-list {
+    padding-left: 11%;
+  }
+}
+
 .composition__icon {
   margin-right: rem(25px);
 }
@@ -132,6 +174,10 @@
 
 .composition__text {
   margin-right: auto;
+
+  @media (max-width:950px) {
+    margin-right: 2%;
+  }
 }
 
 .bar__composition-block {
@@ -154,6 +200,7 @@
   line-height: 2.5rem;
   margin-bottom: 0.9375rem;
 }
+
 @media screen and (max-width: 768px) {
   .bar__title {
     text-align: center;
@@ -163,7 +210,14 @@
 .bar__desc {
   margin-bottom: 2.1875rem;
   padding-right: 3.125rem;
+
+  @include phones {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .bar__desc {
     text-align: center;
@@ -171,6 +225,7 @@
     padding-left: 6.25rem;
   }
 }
+
 @media screen and (max-width: 480px) {
   .bar__desc {
     margin-bottom: 0.9375rem;
@@ -182,6 +237,7 @@
   display: flex;
   margin-bottom: 1.875rem;
 }
+
 @media screen and (max-width: 480px) {
   .bar__details {
     margin-bottom: 0.9375rem;
@@ -227,17 +283,47 @@
 }
 
 
-.bar {
+.bars {
   background: #f8faf9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 19.6875rem;
+    background: url(./../img/raspberry.png) no-repeat;
+    top: -20%;
+    left: 0;
+
+    @include phones {
+      display: none;
+    }
+
+  }
 }
 
-.bar__container {
+.bars__container {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.bar__list {
+.bars__list {
   display: flex;
   padding-left: 0;
+}
+
+.bars__block {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bars__content {
+  overflow: hidden;
+  display: flex;
 }

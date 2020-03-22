@@ -56,15 +56,6 @@
           </div>
           <button class="hamburger__menu" type="button">
             <span class="hamburger__menu-items">
-              <ul class="hamburger__menu-list">
-              <li class="hamburger__menu-item">О нас</li>
-              <li class="hamburger__menu-item">Батончики</li>
-              <li class="hamburger__menu-item">Команда</li>
-              <li class="hamburger__menu-item">Меню</li>
-              <li class="hamburger__menu-item">Отзывы</li>
-              <li class="hamburger__menu-item">Как мы работаем</li>
-              <li class="hamburger__menu-item">Контакты</li>
-              </ul>
             </span>
           </button>
         </header>
@@ -158,14 +149,16 @@
         </ul>
       </div>
     </section>
-    <section class="section bar">
-      <div class="container bar__container">
+    <section class="section bars">
+      <div class="container bars__container">
+        <div class="bars__block">
         <a href="#" class="arrow arrow--left">
           <svg class="arrow__img">
             <use xlink:href="./img/sprites.svg#arrow"></use>
           </svg>
         </a>
-        <ul class="bar__list">
+        <div class="bars__content">
+        <ul class="bars__list">
           <li class="bar__item bar">
             <div class="bar__pic">
               <img src="./img/granola.png" alt="" class="bar__pic-img">
@@ -241,7 +234,7 @@
               <div class="bar__desc">
                 <p>
                   Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молокo,
-                  заметиль сахара и какао бобы.
+                  заменитель сахара и какао бобы.
                 </p>
               </div>
               <div class="bar__details">
@@ -273,11 +266,13 @@
 
           </li>
         </ul>
+        </div>
         <a href="#" class="arrow arrow--right">
           <svg class="arrow__img">
             <use xlink:href="./img/sprites.svg#arrow">
           </svg>
         </a>
+        </div>
       </div>
     </section>
 
@@ -633,10 +628,10 @@
 
 
   </div>
+  
+  </div>
+  </div>
   <script src="./js/openmenu.js"></script>
-  </div>
-  </div>
-
 </body>
 
 </html>

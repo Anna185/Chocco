@@ -10,6 +10,10 @@
     height: 28.3125rem;
     right: 0;
     top: -26%;
+
+    @include phones { 
+      width: 25%;
+    }
   }
 }
 
