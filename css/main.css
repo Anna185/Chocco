@@ -506,9 +506,18 @@ button {
   }
 }
 
-.hamburger {
+.hamburger__menu {
+  vertical-align: middle;
+  background-color: transparent;
+  height: 1.5rem;
+  align-items: center;
+  margin-left: 1.25rem;
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  border: none;
   display: none;
-  background-color: #86c3d7;
+  z-index: 11;
 }
 
 .hamburger__icon {
@@ -522,15 +531,78 @@ button {
     display: none;
   }
 
-  .hamburger {
+  .hamburger__menu {
     display: initial;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 480px) {
-  .hamburger {
+  .hamburger__menu {
     display: initial;
   }
 }
+@media screen and (max-width: 768px) {
+  .hamburger__menu.active {
+    display: block;
+  }
+}
+
+.hamburger__menu-list {
+  display: flex;
+}
+.hamburger__menu-list .hamburger__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menu-list .hamburger__menu-item {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
+  }
+}
+.hamburger__menu-list .hamburger__menu-item:after {
+  content: ".";
+  display: block;
+  color: #fff;
+}
+.hamburger__menu-list .hamburger__menu-item:last-child::after {
+  content: "";
+  display: block;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    flex-direction: column;
+  }
+}
+
+.hamburger__menu.closed .hamburger__menu-items {
+  width: 0;
+  height: 0;
+}
+.hamburger__menu.closed .hamburger__menu-items:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.hamburger__menu.closed .hamburger__menu-items:before {
+  transform: rotate(-45deg);
+}
+
+.hamburger__menu-items::before, .hamburger__menu-items::after {
+  background-color: #ffff;
+  width: 1.5rem;
+  height: 0.25rem;
+  border-radius: 0.1875rem;
+  transition: 0.7s;
+}
+
 .menu {
   width: 39.8125rem;
 }
@@ -560,6 +632,103 @@ button {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.875rem;
+}
+
+.hamburger__menu {
+  vertical-align: middle;
+  background-color: transparent;
+  height: 1.5rem;
+  align-items: center;
+  margin-left: 1.25rem;
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  border: none;
+  display: none;
+  z-index: 11;
+}
+
+.hamburger__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .phone-number {
+    display: none;
+  }
+
+  .hamburger__menu {
+    display: initial;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .hamburger__menu {
+    display: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menu.active {
+    display: block;
+  }
+}
+
+.hamburger__menu-list {
+  display: flex;
+}
+.hamburger__menu-list .hamburger__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menu-list .hamburger__menu-item {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
+  }
+}
+.hamburger__menu-list .hamburger__menu-item:after {
+  content: ".";
+  display: block;
+  color: #fff;
+}
+.hamburger__menu-list .hamburger__menu-item:last-child::after {
+  content: "";
+  display: block;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    flex-direction: column;
+  }
+}
+
+.hamburger__menu.closed .hamburger__menu-items {
+  width: 0;
+  height: 0;
+}
+.hamburger__menu.closed .hamburger__menu-items:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.hamburger__menu.closed .hamburger__menu-items:before {
+  transform: rotate(-45deg);
+}
+
+.hamburger__menu-items::before, .hamburger__menu-items::after {
+  background-color: #ffff;
+  width: 1.5rem;
+  height: 0.25rem;
+  border-radius: 0.1875rem;
+  transition: 0.7s;
 }
 
 .contacts {
@@ -1121,6 +1290,15 @@ button {
 .team {
   position: relative;
   height: 100vh;
+}
+.team::after {
+  position: absolute;
+  content: "";
+  background: url(./../img/section__bar.png) no-repeat;
+  width: 12.25rem;
+  height: 28.3125rem;
+  right: 0;
+  top: -26%;
 }
 
 .team__title {
@@ -1887,4 +2065,247 @@ button {
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow--left {
+  left: -1.5625rem;
+}
+
+.arrow--left .arrow__img {
+  transform: rotate(180deg);
+}
+
+.arrow--right {
+  right: -1.5625rem;
+}
+
+.arrow__img {
+  width: 0.8125rem;
+  height: 1.75rem;
+}
+
+.bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bar__pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.5rem;
+  width: 31.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__pic {
+    width: 18.75rem;
+    margin-bottom: 1.25rem;
+    margin-right: 0;
+  }
+}
+.bar__pic-img {
+  flex-shrink: 0;
+}
+
+.bar__content {
+  flex: 1;
+  color: #000;
+  height: 28.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__content {
+    display: flex;
+    align-items: center;
+  }
+}
+.bar__composition {
+  display: inline-block;
+  margin-bottom: 1.875rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar__composition:hover .bar__composition-block {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__composition {
+    display: none;
+  }
+}
+.bar__composition-btn {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #86c3d7;
+  padding: 0.6875rem 1.25rem;
+}
+
+.bar__composition-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.bar__composition-icon {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  fill: #fff;
+  margin-bottom: 0.1875rem;
+}
+
+.composition {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0.9375rem;
+}
+
+.composition {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0.9375rem;
+}
+.composition:last-child {
+  margin-bottom: 0;
+}
+
+.composition__icon {
+  margin-right: 1.5625rem;
+}
+
+.composition__icon-img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+}
+
+.composition__text {
+  margin-right: auto;
+}
+
+.bar__composition-block {
+  display: none;
+  width: 16.875rem;
+  position: absolute;
+  top: 0;
+  left: 5.625rem;
+  background-color: #fff;
+  opacity: 0.95;
+  padding: 1.5625rem 1.25rem 1.5625rem 2.0625rem;
+  border: 0.0625rem solid #eee;
+  border-radius: 5px;
+}
+
+.bar__title {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-bottom: 0.9375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__title {
+    text-align: center;
+  }
+}
+.bar__desc {
+  margin-bottom: 2.1875rem;
+  padding-right: 3.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__desc {
+    text-align: center;
+    padding-right: 6.25rem;
+    padding-left: 6.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bar__desc {
+    margin-bottom: 0.9375rem;
+  }
+}
+.bar__details {
+  font-size: 1.125rem;
+  display: flex;
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .bar__details {
+    margin-bottom: 0.9375rem;
+  }
+}
+.bar__calory {
+  margin-right: 3.125rem;
+}
+
+.bar__order {
+  display: flex;
+}
+
+.bar__price {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+
+.bar__price-currency-img {
+  width: 1.5rem;
+  height: 2rem;
+}
+
+.bar__desc,
+.bar__calory-text,
+.bar__weight-text {
+  color: #666;
+}
+
+.bar__calory-value,
+.bar__weight-value {
+  font-weight: 700;
+  color: #000;
+}
+
+.bar__price-value {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  font-weight: 300;
+  margin-right: 0.625rem;
+}
+
+.bar {
+  background: #f8faf9;
+}
+
+.bar__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bar__list {
+  display: flex;
+  padding-left: 0;
 }

@@ -1,6 +1,16 @@
 .team {
   position: relative;
   height:100vh ;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background:url(./../img/section__bar.png) no-repeat; 
+    width: 12.25rem;
+    height: 28.3125rem;
+    right: 0;
+    top: -26%;
+  }
 }
 
 .team__title {

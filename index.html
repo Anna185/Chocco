@@ -54,10 +54,18 @@
             </svg>
             <a href="tel:88009039090" class="contacts__phone">8 800 903 90 90</a>
           </div>
-          <button class="hamburger">
-            <svg class="hamburger__icon">
-              <use xlink:href="./img/sprites.svg#gamburger"></use>
-            </svg>
+          <button class="hamburger__menu" type="button">
+            <span class="hamburger__menu-items">
+              <ul class="hamburger__menu-list">
+              <li class="hamburger__menu-item">О нас</li>
+              <li class="hamburger__menu-item">Батончики</li>
+              <li class="hamburger__menu-item">Команда</li>
+              <li class="hamburger__menu-item">Меню</li>
+              <li class="hamburger__menu-item">Отзывы</li>
+              <li class="hamburger__menu-item">Как мы работаем</li>
+              <li class="hamburger__menu-item">Контакты</li>
+              </ul>
+            </span>
           </button>
         </header>
         <div class="hero__content">
@@ -150,6 +158,129 @@
         </ul>
       </div>
     </section>
+    <section class="section bar">
+      <div class="container bar__container">
+        <a href="#" class="arrow arrow--left">
+          <svg class="arrow__img">
+            <use xlink:href="./img/sprites.svg#arrow"></use>
+          </svg>
+        </a>
+        <ul class="bar__list">
+          <li class="bar__item bar">
+            <div class="bar__pic">
+              <img src="./img/granola.png" alt="" class="bar__pic-img">
+            </div>
+            <div class="bar__content">
+              <div class="bar__composition">
+                <div class="bar__composition-btn">
+                  <svg class="bar__composition-icon">
+                    <use xlink:href="./img/sprites.svg#chocolate-bar"></use>
+                  </svg>
+                  <div class="bar__composition-text">Состав</div>
+                </div>
+                <div class="bar__composition-block">
+                  <ul class="bar__composition-list">
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#grape"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Виноград</div>
+                      <div class="composition-weight">25г</div>
+                    </li>
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#nut"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Грецкий орех</div>
+                      <div class="composition-weight">32г</div>
+                    </li>
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#almond"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Кунжутное семя</div>
+                      <div class="composition-weight">20г</div>
+                    </li>
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#powder"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Сухое молоко</div>
+                      <div class="composition-weight">10г</div>
+                    </li>
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#apitherapy"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Зам. сахара</div>
+                      <div class="composition-weight">4г</div>
+                    </li>
+                    <li class="bar__composition-item composition">
+                      <div class="composition__icon">
+                        <svg class="composition__icon-img">
+                          <use xlink:href="./img/sprites.svg#beans"></use>
+                        </svg>
+                      </div>
+                      <div class="composition__text">Какао бобы</div>
+                      <div class="composition-weight">4г</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="bar__title">Батончик "Гранола виноград"</h2>
+              <div class="bar__desc">
+                <p>
+                  Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молокo,
+                  заметиль сахара и какао бобы.
+                </p>
+              </div>
+              <div class="bar__details">
+                <div class="bar__calory">
+                  <div class="bar__calory-text">Калорийность</div>
+                  <div class="bar__calory-value">110 ккал</div>
+                </div>
+                <div class="bar__weght">
+                  <div class="bar__weight-text">Вес</div>
+                  <div class="bar__weight-value">95 грамм</div>
+                </div>
+              </div>
+              <div class="bar__order">
+                <div class="bar__price">
+                  <div class="bar__price-value">140</div>
+                  <div class="bar__price-currency">
+                    <svg class="bar__price-currency-img">
+                      <use xlink:href="./img/sprites.svg#rub">
+                    </svg>
+                  </div>
+                </div>
+                <div class="bar__order-button">
+                  <a href="#" class="btn btn__order">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bars__item bar">
+
+          </li>
+        </ul>
+        <a href="#" class="arrow arrow--right">
+          <svg class="arrow__img">
+            <use xlink:href="./img/sprites.svg#arrow">
+          </svg>
+        </a>
+      </div>
+    </section>
+
 
     <section class="section team">
       <div class="container container__team">
@@ -502,7 +633,7 @@
 
 
   </div>
-
+  <script src="./js/openmenu.js"></script>
   </div>
   </div>
 
