@@ -1,5 +1,6 @@
 .arrow {
   position: absolute;
+  background-color: #f8faf9;
 }
 
 .arrow--left {
@@ -326,4 +327,17 @@
 .bars__content {
   overflow: hidden;
   display: flex;
+}
+
+.bar__order__button {
+  text-decoration: none;
+  background-color: #365a49;
+  color: #ffffff;
+
+
+  &:hover {
+    color: #365a49;
+    background-color: #ffffff;
+
+  }
 }

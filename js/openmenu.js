@@ -1,7 +1,7 @@
 
 (function openMenu() {
   const menuBtn = document.querySelector('.hamburger__menu');
-  const menuBlock = document.querySelector('menu');
+  const menuBlock = document.querySelector('.menu');
   
   menuBtn.addEventListener('click', function () {
   menuBlock.classList.toggle('active');
