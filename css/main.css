@@ -659,6 +659,7 @@ button {
 
   .menu.active {
     display: flex;
+    z-index: 50;
   }
 
   .hamburger__menu {
@@ -670,7 +671,7 @@ button {
     display: flex;
     align-items: center;
     background-color: transparent;
-    z-index: 20;
+    z-index: 70;
     padding: 0;
   }
 
@@ -2366,12 +2367,12 @@ button {
   display: flex;
 }
 
-.bar__order__button {
+.bar__order-button {
   text-decoration: none;
   background-color: #365a49;
   color: #ffffff;
 }
-.bar__order__button:hover {
+.bar__order-button:hover {
   color: #365a49;
   background-color: #ffffff;
 }

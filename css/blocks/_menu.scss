@@ -55,6 +55,7 @@
 
   .menu.active {
     display: flex;
+    z-index:50 ;
   }
 
   .hamburger__menu {
@@ -66,7 +67,7 @@
     display: flex;
     align-items: center;
     background-color: transparent;
-    z-index:20 ;
+    z-index:70 ;
     padding: 0;
 
   }
