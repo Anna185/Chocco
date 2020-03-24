@@ -19,3 +19,15 @@
 
 }) ();
 
+  const menuBtn = document.querySelector('.chocco__accordeon-item-btn');
+  const menuBlock = document.querySelector('.chocco__accordeon-item');
+  const menuBtnClose = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener('click', function () {
+  menuBlock.classList.toggle('active');
+  })
+
+ 
+
+
+
