@@ -19,13 +19,21 @@
 
 }) ();
 
-  const menuBtn = document.querySelector('.chocco__accordeon-item-btn');
-  const menuBlock = document.querySelector('.chocco__accordeon-item');
-  const menuBtnClose = document.querySelector('.close-btn');
+(function openMenuChocco() {
 
-  menuBtn.addEventListener('click', function () {
-  menuBlock.classList.toggle('active');
-  })
+  const menuList = document.querySelector('.chocco__accordeon-list');
+  const menuBlock = document.querySelector('.chocco__accordeon-item');
+  const menuBtn = document.querySelector('.close-btn');
+  
+  menuList.addEventListener('click', function (e) {
+  if (e.target.classList.contains ('chocco__accordeon-item-btn')) {
+    menuBlock.classList.toggle('active');
+  }
+})
+
+
+
+  }) ();
 
  
 
