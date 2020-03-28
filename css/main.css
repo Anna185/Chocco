@@ -1606,6 +1606,7 @@ button {
   width: 0;
   overflow: hidden;
   background-color: rgba(51, 53, 55, 0.9);
+  transition: 0.7s;
 }
 @media screen and (max-width: 480px) {
   .chocco__accordeon-item-content {

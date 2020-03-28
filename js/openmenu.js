@@ -22,42 +22,83 @@
 (function openMenuChocco() {
 
   const menuList = document.querySelector('.chocco__accordeon-list');
-  const menuBlock = document.querySelector('.chocco__accordeon-item');
-  const menuBtn = document.querySelector('.close-btn');
-  
+  const menuBlock = document.querySelectorAll('.chocco__accordeon-item');
+  const menuBtn = document.querySelectorAll('.close-btn');
+
   menuList.addEventListener('click', function (e) {
+  
   if (e.target.classList.contains ('chocco__accordeon-item-btn')) {
-    menuBlock.classList.toggle('active');
+    const targetBlock = e.target.parentNode;
+    for (let item of menuBlock) {
+      if (item.classList.contains('active') && item !== targetBlock) {
+        item.classList.remove('active');
+        
+      }
+    }
+       targetBlock.classList.toggle('active');
+  }
+    if (e.target.classList.contains ('chocco__accordeon-item-title')) {
+    const targetBlock = e.target.parentNode.parentNode;
+    for (let item of menuBlock) {
+      if (item.classList.contains('active') && item !== targetBlock) {
+        item.classList.remove('active');
+      }
+    }
+       targetBlock.classList.toggle('active');
   }
 })
-
-
-
   }) ();
 
- 
-
-  (function openMenuTeam() {
-
-    const teamList = document.querySelector('.team__list-accordeon');
-    const teamBlock = document.querySelectorAll('.team__item-accordeon');
-    
   
-    teamList.addEventListener('click', function (e) {
-    
-    if (e.target.classList.contains ('team__item-accordeon-title')) {
-      const targetBlock = e.target.parentNode;
-      for (let item of teamBlock) {
-        if (item.classList.contains('active') && item !== targetBlock) {
-          item.classList.remove('active');
-          
-        }
+  
+(function openMenuTeam() {
+
+  const teamList = document.querySelector('.team__list-accordeon');
+  const teamBlock = document.querySelectorAll('.team__item-accordeon');
+  
+
+  teamList.addEventListener('click', function (e) {
+  
+  if (e.target.classList.contains ('team__item-accordeon-title')) {
+    const targetBlock = e.target.parentNode;
+    for (let item of teamBlock) {
+      if (item.classList.contains('active') && item !== targetBlock) {
+        item.classList.remove('active');
+        
       }
-         targetBlock.classList.toggle('active');
     }
-      
-  })
-    }) ();
+       targetBlock.classList.toggle('active');
+  }
+    
+})
+  }) ();
+
+
+  
+(function Slider() {
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+
+right.addEventListener("click", function(e) {
+ loop("right", e);
+});
+
+left.addEventListener("click", function(e) {
+ loop("left", e);
+});
+
+function loop(direction, e) {
+ e.preventDefault();
+ if (direction === "right") {
+   items.appendChild(items.firstElementChild);
+ } else {
+   items.insertBefore(items.lastElementChild, items.firstElementChild);
+ }
+}
+}) ();
+
+   
   
   
   (function Slider() {
