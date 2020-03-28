@@ -37,5 +37,50 @@
 
  
 
+  (function openMenuTeam() {
 
+    const teamList = document.querySelector('.team__list-accordeon');
+    const teamBlock = document.querySelectorAll('.team__item-accordeon');
+    
+  
+    teamList.addEventListener('click', function (e) {
+    
+    if (e.target.classList.contains ('team__item-accordeon-title')) {
+      const targetBlock = e.target.parentNode;
+      for (let item of teamBlock) {
+        if (item.classList.contains('active') && item !== targetBlock) {
+          item.classList.remove('active');
+          
+        }
+      }
+         targetBlock.classList.toggle('active');
+    }
+      
+  })
+    }) ();
+  
+  
+  (function Slider() {
+  const left = document.querySelector("#left");
+  const right = document.querySelector("#right");
+  const items = document.querySelector("#items");
+  
+  right.addEventListener("click", function(e) {
+   loop("right", e);
+  });
+  
+  left.addEventListener("click", function(e) {
+   loop("left", e);
+  });
+  
+  function loop(direction, e) {
+   e.preventDefault();
+   if (direction === "right") {
+     items.appendChild(items.firstElementChild);
+   } else {
+     items.insertBefore(items.lastElementChild, items.firstElementChild);
+   }
+  }
+  }) ();
+  
 

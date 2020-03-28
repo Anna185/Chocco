@@ -1366,11 +1366,11 @@ button {
   font-weight: 400;
 }
 
-.team__item-accordeon--active .team__item-accordeon-info {
+.team__item-accordeon.active .team__item-accordeon-info {
   height: auto;
 }
 
-.team__item-accordeon--active .team__item-accordeon-title::after {
+.team__item-accordeon.active .team__item-accordeon-title::after {
   border-bottom-color: #365a49;
   border-top-color: #ffffff;
   left: 97%;
@@ -1399,7 +1399,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .team__item-accordeon--active .team__item-accordeon-photo {
+  .team__item-accordeon.active .team__item-accordeon-photo {
     height: auto;
   }
 }
@@ -2365,6 +2365,7 @@ button {
 .bars__content {
   overflow: hidden;
   display: flex;
+  width: 60rem;
 }
 
 .bar__order-button {
@@ -2375,4 +2376,8 @@ button {
 .bar__order-button:hover {
   color: #365a49;
   background-color: #ffffff;
+}
+
+.bars__item {
+  width: 60rem;
 }

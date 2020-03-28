@@ -318,6 +318,7 @@
   padding-left: 0;
 }
 
+
 .bars__block {
   display: flex;
   align-items: center;
@@ -327,6 +328,7 @@
 .bars__content {
   overflow: hidden;
   display: flex;
+  width: 60rem;
 }
 
 .bar__order-button {
@@ -340,4 +342,8 @@
     background-color: #ffffff;
 
   }
+}
+
+.bars__item {
+  width: 60rem;
 }

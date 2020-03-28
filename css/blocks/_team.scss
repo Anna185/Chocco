@@ -113,17 +113,19 @@
 }
 
 
-.team__item-accordeon--active .team__item-accordeon-info {
+.team__item-accordeon.active {.team__item-accordeon-info {
   height:auto ;
 }
+}
 
-.team__item-accordeon--active 
+.team__item-accordeon.active {
 .team__item-accordeon-title::after {
     border-bottom-color: #365a49;
     border-top-color:#ffffff;
     left: 97%;
     top: -0.125rem;
   }
+}
 
 .team__item-accordeon-info-text {
   color: #666666;
@@ -147,9 +149,9 @@
   }
 }
 
-.team__item-accordeon--active .team__item-accordeon-photo {
+.team__item-accordeon.active {.team__item-accordeon-photo {
   @include tablets {
     height: auto;
   }
 
-}
+}}
