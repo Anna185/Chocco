@@ -12,8 +12,13 @@
   }
 
 @include phones {
-  left: 10px;
+  left: 20%;
   top: 21%;
+  }
+
+  @media (max-width:320px) {
+    left: 10px;
+    top: 18%; 
   }
 }
 
@@ -25,8 +30,8 @@
   right: -1.5625rem;
 
   @include phones {
-    right: 10px;
     top: 21%;
+    right: 22%;;
   }
 
   @include tablets {
@@ -34,6 +39,10 @@
     top:24%;
   }
   
+  @media (max-width:320px) {
+    right: 3.375rem;
+    top: 18%;
+  }
 }
 
 .arrow__img {
@@ -67,7 +76,7 @@
   .bar__pic {
     width: 18.75rem;
     margin-bottom: 1.25rem;
-    margin-right: 0;
+    margin-right: 25%;
   }
 }
 
@@ -76,6 +85,11 @@
 
   @media (max-width:950px) {
     width: 95%;
+  }
+
+  @media (max-width:320px) {
+    width: 60%;
+    margin-right: 29%;
   }
 }
 
@@ -89,13 +103,17 @@
   @media (max-width:950px) {
     margin-right: 16%;
   }
+
+ @media (max-width:320px) {
+  padding-right: 14%;
+ }
 }
 
 @media screen and (max-width: 768px) {
   .bar__content {
     display: flex;
     align-items: center;
-    margin-right: auto
+    margin-right: 23%;
   }
 }
 
@@ -233,6 +251,13 @@
   }
 }
 
+@media (max-width:320px) {
+  .bar__desc {
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+}
+
 .bar__details {
   font-size: 1.125rem;
   display: flex;
@@ -346,4 +371,9 @@
 
 .bar__item {
   width: 60rem;
+
+  
+  @include phones {
+    width: 40rem;
+  }
 }

@@ -1259,6 +1259,9 @@ button {
 .team {
   position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .team::after {
   position: absolute;
@@ -2058,8 +2061,14 @@ button {
 }
 @media screen and (max-width: 480px) {
   .arrow--left {
-    left: 10px;
+    left: 20%;
     top: 21%;
+  }
+}
+@media (max-width: 320px) {
+  .arrow--left {
+    left: 10px;
+    top: 18%;
   }
 }
 
@@ -2072,14 +2081,20 @@ button {
 }
 @media screen and (max-width: 480px) {
   .arrow--right {
-    right: 10px;
     top: 21%;
+    right: 22%;
   }
 }
 @media screen and (max-width: 768px) {
   .arrow--right {
     right: 9.375rem;
     top: 24%;
+  }
+}
+@media (max-width: 320px) {
+  .arrow--right {
+    right: 3.375rem;
+    top: 18%;
   }
 }
 
@@ -2113,7 +2128,7 @@ button {
   .bar__pic {
     width: 18.75rem;
     margin-bottom: 1.25rem;
-    margin-right: 0;
+    margin-right: 25%;
   }
 }
 .bar__pic-img {
@@ -2122,6 +2137,12 @@ button {
 @media (max-width: 950px) {
   .bar__pic-img {
     width: 95%;
+  }
+}
+@media (max-width: 320px) {
+  .bar__pic-img {
+    width: 60%;
+    margin-right: 29%;
   }
 }
 
@@ -2137,12 +2158,17 @@ button {
     margin-right: 16%;
   }
 }
+@media (max-width: 320px) {
+  .bar__content {
+    padding-right: 14%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .bar__content {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    margin-right: 23%;
   }
 }
 .bar__composition {
@@ -2275,6 +2301,12 @@ button {
     margin-bottom: 0.9375rem;
   }
 }
+@media (max-width: 320px) {
+  .bar__desc {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 .bar__details {
   font-size: 1.125rem;
   display: flex;
@@ -2381,4 +2413,9 @@ button {
 
 .bar__item {
   width: 60rem;
+}
+@media screen and (max-width: 480px) {
+  .bar__item {
+    width: 40rem;
+  }
 }

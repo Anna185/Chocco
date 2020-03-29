@@ -1,6 +1,9 @@
 .team {
   position: relative;
   height:100vh ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &::after {
     position: absolute;
