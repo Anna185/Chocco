@@ -530,10 +530,10 @@
         <h2 class="title title__how-we-work">Как мы работаем</h2>
       </div>
     </section>
-    <section class="section order">
+    <section class="section order" id="order">
       <div class="container container__order">
         <h2 class="title title--order">Закажите доставку</h2>
-        <form class="order__form" name="order">
+        <form class="order__form" id="orderForm">
           <div class="order__form-column">
             <div class="order__form-row">
               <label class="order__form-block">
@@ -722,11 +722,19 @@
 
 
 
-
+    <script type="template" id="overlayTemplate">
+      <div class="overlay">
+        <div class="container">
+          <a class="close" href="#">x</a>
+          <div class="content"></div>
+        </div>
+      </div>
+    </script>
   </div>
 
   </div>
   </div>
+  
   <script src="./js/openmenu.js"></script>
 </body>
 
