@@ -1948,34 +1948,34 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0005;
+  background: #404040;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10000;
 }
 
-.container {
+.container-overlay {
   position: relative;
 }
 
 .content {
-  width: 400px;
-  background: #444;
+  background: #fff;
   border-radius: 5px;
   padding: 10px;
-  color: #fff;
+  color: #365a49;
   font: 16px Helvetica, sans-serif;
   margin: 0;
+  text-align: center;
 }
 
 .close {
-  font: 16px Helvetica, sans-serif;
+  font: 12px Helvetica, sans-serif;
   color: #fff;
   position: absolute;
   right: -5px;
   top: -10px;
-  background: #d00;
+  background: #365a49;
   border-radius: 50%;
   width: 20px;
   height: 20px;
