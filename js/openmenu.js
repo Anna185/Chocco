@@ -80,7 +80,7 @@
   const right = document.querySelector("#right");
   const items = document.querySelector("#items");
 
-  right.addEventListener("click", function (e) {
+right.addEventListener("click", function (e) {
     loop("right", e);
   });
 
@@ -89,7 +89,7 @@
   });
 
   function loop(direction, e) {
-    e.preventDefault();
+   e.preventDefault();
     if (direction === "right") {
       items.appendChild(items.firstElementChild);
     } else {

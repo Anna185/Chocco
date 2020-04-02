@@ -179,3 +179,14 @@
     width: 82%;
   }
   }
+
+  .reviews__full-item {
+    display: none;
+  }
+
+  .reviews__full-item.active {
+    display: flex;
+  }
+
+  
+
