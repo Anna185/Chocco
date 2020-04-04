@@ -98,3 +98,17 @@ $("[data-scroll-to]").on("click", (e) => {
   performTransition(target);
 });
 
+if (isMobile) {
+
+  $("body").swipe({
+    swipe: (event, direction) => {
+      let scrollDirection;
+      const windowScroller = scroller();
+
+      if (direction === "up") scrollDirection = "next";
+      if (direction === "down") scrollDirection = "prev";
+
+      windowScroller[scrollDirection]();
+    },
+  });
+}
