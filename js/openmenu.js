@@ -93,7 +93,7 @@ right.addEventListener("click", function (e) {
     if (direction === "right") {
       items.appendChild(items.firstElementChild);
     } else {
-      items.insertBefore(items.lastElementChild, items.firstElementChild);
+     items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
   }
 })();

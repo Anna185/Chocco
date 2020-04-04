@@ -20,7 +20,8 @@
   margin-top: 0.9375rem;
 }
 
-.pagination__item__link.active {
+.pagination__item.active {
+  .pagination__item__link{
   
   &::after {
     content: "";
@@ -33,4 +34,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
 }

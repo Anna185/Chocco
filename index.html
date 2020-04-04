@@ -16,7 +16,8 @@
 
 <body>
   <div class="wrapper">
-    <section class="section hero">
+  <div class="maincontent">
+    <section class="section hero active">
       <div class="container container--hero">
         <header class="header">
           <a class="logo" href="./index.html">
@@ -25,25 +26,25 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#advantages" class="menu__link">О нас</a>
+                <a href="#advantages" class="menu__link" data-scroll-to="2">О нас</a>
               </li>
               <li class="menu__item">
-                <a href="#bars" class="menu__link">Батончики</a>
+                <a href="#bars" class="menu__link" data-scroll-to="3">Батончики</a>
               </li>
               <li class="menu__item">
-                <a href="#team" class="menu__link">Команда</a>
+                <a href="#team" class="menu__link" data-scroll-to="4">Команда</a>
               </li>
               <li class="menu__item">
-                <a href="#chocco" class="menu__link">Меню</a>
+                <a href="#chocco" class="menu__link" data-scroll-to="5">Меню</a>
               </li>
               <li class="menu__item">
-                <a href="#reviews" class="menu__link">Отзывы</a>
+                <a href="#reviews" class="menu__link" data-scroll-to="6">Отзывы</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Как мы работаем</a>
+                <a href="#" class="menu__link" data-scroll-to="7">Как мы работаем</a>
               </li>
               <li class="menu__item">
-                <a href="#contacts" class="menu__link">Контакты</a>
+                <a href="#contacts" class="menu__link" data-scroll-to="9">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -150,11 +151,13 @@
     </section>
     <section class="section bars" id="bars">
       <div class="container bars__container">
+
         <button type="button" class="arrow arrow--left" id="left">
           <svg class="arrow__img">
             <use xlink:href="./img/sprites.svg#arrow"></use>
           </svg>
         </button>
+
         <div class="bars__content">
           <ul class="bars__list" id="items">
             <li class="bar__item bar">
@@ -365,11 +368,13 @@
             </li>
           </ul>
         </div>
+
         <button type="button" class="arrow arrow--right" id="right">
           <svg class="arrow__img">
             <use xlink:href="./img/sprites.svg#arrow">
           </svg>
-          </a>
+        </button>
+
       </div>
     </section>
     <section class="section team" id="team">
@@ -553,7 +558,7 @@
           </li>
         </ul>
         <ul class="reviews__list">
-          <li class="reviews__item active"  data-id='1'>
+          <li class="reviews__item active" data-id='1'>
             <a href="#" class="reviews__item-link">
               <img src="./img/Slice_1.png" class="reviews__item__avatar">
             </a>
@@ -573,7 +578,7 @@
     </section>
 
 
-    
+
 
     <section class="section player-section">
       <div class="container container__player-section">
@@ -735,10 +740,15 @@
 
       </footer>
     </section>
+  </div>
+
+
+
+
 
     <ul class="pagination">
-      <li class="pagination__item">
-        <a href="" class="pagination__item__link active"></a>
+      <li class="pagination__item active">
+        <a href="" class="pagination__item__link"></a>
       </li>
       <li class="pagination__item">
         <a href="" class="pagination__item__link"></a>
@@ -796,6 +806,7 @@
         </div>
       </div>
     </script>
+  
   </div>
 
   </div>
@@ -805,12 +816,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="./js/openmenu.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/form.js"></script>
   <script src="./js/map.js"></script>
   <script src="https://www.youtube.com/inframe_api"></script>
   <script src="./js/player.js"></script>
   <script src="./js/pagination.js"></script>
   <script src="./js/reviews.js"></script>
+  <script src="./js/onepagescroll.js"></script>
 
 
 
