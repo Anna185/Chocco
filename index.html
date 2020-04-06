@@ -26,25 +26,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#advantages" class="menu__link" data-scroll-to="2">О нас</a>
+                  <a href="#advantages" class="menu__link" data-scroll-to="1">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#bars" class="menu__link" data-scroll-to="3">Батончики</a>
+                  <a href="#bars" class="menu__link" data-scroll-to="2">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#team" class="menu__link" data-scroll-to="4">Команда</a>
+                  <a href="#team" class="menu__link" data-scroll-to="3">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#chocco" class="menu__link" data-scroll-to="5">Меню</a>
+                  <a href="#chocco" class="menu__link" data-scroll-to="4">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#reviews" class="menu__link" data-scroll-to="6">Отзывы</a>
+                  <a href="#reviews" class="menu__link" data-scroll-to="5">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link" data-scroll-to="7">Как мы работаем</a>
+                  <a href="#work" class="menu__link" data-scroll-to="6">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#contacts" class="menu__link" data-scroll-to="9">Контакты</a>
+                  <a href="#contacts" class="menu__link" data-scroll-to="8">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -580,33 +580,37 @@
           </ul>
         </div>
       </section>
-
-
-
-
-      <section class="section player-section">
-        <div class="container container__player-section">
-          <h2 class="title title__player-section">Как мы работаем</h2>
-          <div class="player-section__container">
-            <div class="player active">
-              <div class="player__wrapper">
-                <div id="yt-player" class="player__elem"></div>
-                <div class="player__splash"></div>
+      <section class="section work">
+        <h2 class="title title__work">Как мы работаем</h2>
+        <div class="container work__container">
+          <div class="player">
+            <div class="player__wrap">
+              <video class="player__elem" src="./video/videoplayback.mp4"></video>
+              <div class="player__splash">
+                <svg class="player__splash-play">
+                  <use xlink:href="./img/sprites.svg#play"></use>
+                </svg>
               </div>
-              <div class="player__controls">
-                <button class="player__start"></button>
-                <div class="player__playback">
-                  <button class="player__playback-button"></button>
-                </div>
-                <div class="player__duration">
-                  <span class="player__duration-completed">0:00</span>
-                  <span class="player__duration-estimate">0:00</span>
-                </div>
+            </div>
+            <div class="player__controls">
+              <button class="player__btn player__play">
+              </button>
+              <div class="player__playback">
+                <button class="player__btn player__btn--circle player__playback-btn "></button>
+              </div>
+              <button class="player__btn player__vol">
+                <svg class="player__vol-icon">
+                  <use xlink:href="./img/sprites.svg#volume"></use>
+                </svg>
+              </button>
+              <div class="player__volume">
+                <button class="player__btn player__btn--circle player__volume-btn"></button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="section order" id="order">
         <div class="container container__order">
           <h2 class="title title--order">Закажите доставку</h2>
@@ -818,13 +822,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="./js/openmenu.js"></script>
-  <script src="./js/slider.js"></script>
   <script src="./js/slider_new.js"></script>
   <script src="./js/form.js"></script>
   <script src="./js/map.js"></script>
   <script src="https://www.youtube.com/inframe_api"></script>
   <script src="./js/player.js"></script>
-  <script src="./js/pagination.js"></script>
   <script src="./js/reviews.js"></script>
   <script src="./js/onepagescroll.js"></script>
 

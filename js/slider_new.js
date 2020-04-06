@@ -3,7 +3,7 @@ $(function () {
   var moveSlide = function (container, slideNum){
     var
     
-    items = container.find('.bar__item bar'),
+    items = container.find('.bar__item'),
     activeSlide = items.filter('.active'),
     reqItem = items.eq(slideNum),
     reqIndex = reqItem.index(),
@@ -27,8 +27,8 @@ $(function () {
     e.preventDefault();
 
     var $this = $(this),
-    container = $this.closest('.bars__content'),
-    items = $('.bar__item bar', container),
+    container = $this.closest('.bars'),
+    items = $('.bar__item', container),
     activeItem = items.filter('.active'),
     nextItem = activeItem.next(),
     prevItem = activeItem.prev();

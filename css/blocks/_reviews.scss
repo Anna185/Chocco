@@ -1,8 +1,6 @@
 .reviews {
   position: relative;
-  background-image: url(./../img/background-reviews.png);
-  background-repeat: no-repeat;
-  background-position-y: 31.25rem;
+  
 
   @include phones {
     background-image: none;

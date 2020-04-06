@@ -10,16 +10,9 @@
     flex-direction:column;
     justify-content: center; 
   }
-
-
-  
-
-    @include tablets {
-      top:80%;
-    }
-
-    @include phones {
+   @include phones {
    background-image: none;
+
     }
     
   
@@ -118,9 +111,7 @@
 
 
 
-.advantages__description {
-  
-}
+
 
 .advantages__item-text {
   color: #666666;

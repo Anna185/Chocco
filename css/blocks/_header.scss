@@ -9,6 +9,13 @@
   .contacts {
     display: none;
   }
+
+  @include phones {
+    .logo {
+      display: none;
+    }
+    
+  }
 }
 }  
 

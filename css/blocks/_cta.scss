@@ -52,7 +52,13 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding:1.25rem 2.0625rem ;  
+  padding:1.25rem 2.0625rem ;
+  
+  &:hover {
+    color:#ffffff;
+    background-color: #365a49;
+
+  }
 }
 
 .btn__cta {
